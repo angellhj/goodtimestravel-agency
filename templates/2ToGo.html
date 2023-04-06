@@ -7,12 +7,16 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
         <div class="container-fluid">
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,25 +28,26 @@
                         <a class="nav-link" href="templates/tour.html">Tours</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cruises</a>
+                        <a class="nav-link" href="templates/cruise.html">Cruises</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ground</a>
+                        <a class="nav-link" href="templates/ground.html">Ground</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Flight</a>
+                        <a class="nav-link" href="templates/flight.html">Flight</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">2 To Go</a>
+                        <a class="nav-link" href="templates/2ToGo.html">2 To Go</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <a class="navbar-brand" href="#">[Insert Logo Here]</a>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="navbar-brand" href="../index.html">[Insert Logo Here]</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-user"></i></a>
+                    <li class="nav-item my-1">
+                        <button class="btn btn-secondary btn-light" type="button" data-toggle="modal" data-target="#loginModal">
+                            <i class="fas fa-user my-2 my-sm-0"></i> Login
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -66,82 +71,95 @@
     <br />
 
     <!-- Section 2 -->
-    <div class="container">
-		<div class="row">
-			<div class="col-md-3 mb-3">
-				<div class="card">
-					<img class="card-img-top" src="../img/s1.jpg" alt="Destination 1">
-					<div class="card-body">
-						<h5 class="card-title">Destination 1</h5>
-						<a href="#" class="btn btn-primary">View Packages</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 mb-3">
-				<div class="card">
-					<img class="card-img-top" src="../img/s1.jpg" alt="Destination 2">
-					<div class="card-body">
-						<h5 class="card-title">Destination 2</h5>
-						<a href="#" class="btn btn-primary">View Packages</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 mb-3">
-				<div class="card">
-					<img class="card-img-top" src="../img/s1.jpg" alt="Destination 3">
-					<div class="card-body">
-						<h5 class="card-title">Destination 3</h5>
-						<a href="#" class="btn btn-primary">View Packages</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 mb-3">
-				<div class="card">
-					<img class="card-img-top" src="../img/s1.jpg" alt="Destination 4">
-					<div class="card-body">
-						<h5 class="card-title">Destination 4</h5>
-                        <a href="#" class="btn btn-primary">View Packages</a>
-					</div>
-				</div>
-			</div>
-            <div class="col-md-3 mb-3">
-				<div class="card">
-					<img class="card-img-top" src="../img/s1.jpg" alt="Destination 1">
-					<div class="card-body">
-						<h5 class="card-title">Destination 1</h5>
-						<a href="#" class="btn btn-primary">View Packages</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 mb-3">
-				<div class="card">
-					<img class="card-img-top" src="../img/s1.jpg" alt="Destination 2">
-					<div class="card-body">
-						<h5 class="card-title">Destination 2</h5>
-						<a href="#" class="btn btn-primary">View Packages</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 mb-3">
-				<div class="card">
-					<img class="card-img-top" src="../img/s1.jpg" alt="Destination 3">
-					<div class="card-body">
-						<h5 class="card-title">Destination 3</h5>
-						<a href="#" class="btn btn-primary">View Packages</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 mb-3">
-				<div class="card">
-					<img class="card-img-top" src="../img/s1.jpg" alt="Destination 4">
-					<div class="card-body">
-						<h5 class="card-title">Destination 4</h5>
-						<a href="#" class="btn btn-primary">View Packages</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <section class="my-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-3">
+                    <div class="tour-card">
+                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination 1</h5>
+                            <p>description</p>
+                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tour-card">
+                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination 2</h5>
+                            <p>description</p>
+                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tour-card">
+                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination 3</h5>
+                            <p>description</p>
+                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tour-card">
+                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination 4</h5>
+                            <p>description</p>
+                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mb-5">
+                <div class="col-md-3">
+                    <div class="tour-card">
+                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination 5</h5>
+                            <p>description</p>
+                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tour-card">
+                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination 6</h5>
+                            <p>description</p>
+                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tour-card">
+                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination 7</h5>
+                            <p>description</p>
+                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tour-card">
+                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination 8</h5>
+                            <p>description</p>
+                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <br />
     <br />

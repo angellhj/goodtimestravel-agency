@@ -8,11 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
         <div class="container-fluid">
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,12 +42,13 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <a class="navbar-brand" href="index.html">[Insert Logo Here]</a>
                     <li class="nav-item">
-                        <a class="nav-link" href="templates/login.html">Login</a>
+                        <a class="navbar-brand" href="../templates/index.html">[Insert Logo Here]</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-user"></i></a>
+                    <li class="nav-item my-1">
+                        <button class="btn btn-secondary btn-light" type="button" data-toggle="modal" data-target="#loginModal">
+                            <i class="fas fa-user my-2 my-sm-0"></i> Login
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -55,11 +61,12 @@
             <li data-target="#slide-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#slide-carousel" data-slide-to="1"></li>
             <li data-target="#slide-carousel" data-slide-to="2"></li>
+            <li data-target="#slide-carousel" data-slide-to="3"></li>
         </ol>
         
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/slide-1.jpg" class="d-block w-100" alt="Beach Travel 1">
+                <img src="img/slide1.jpg" class="d-block w-100" alt="Slide 1">
                 <div class="slide-text">
                     <h1>Welcome to Beach Travel</h1>
                     <p>Explore the best beaches around the world</p>
@@ -68,7 +75,7 @@
             </div>
             
             <div class="carousel-item">
-                <img src="img/slide-2.jpg" class="d-block w-100" alt="Beach Travel 2">
+                <img src="img/slide2.jpg" class="d-block w-100" alt="Slide 2">
                 <div class="slide-text">
                     <h1>Discover Your Perfect Beach Getaway</h1>
                     <p>Find your paradise with Beach Travel</p>
@@ -77,7 +84,16 @@
             </div>
             
             <div class="carousel-item">
-                <img src="img/slide-3.jpg" class="d-block w-100" alt="Beach Travel 3">
+                <img src="img/slide3.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="slide-text">
+                    <h1>Escape to the Beach</h1>
+                    <p>Experience the ultimate relaxation</p>
+                    <a href="#" class="btn btn-primary btn-lg">Book Now</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/slide4.jpg" class="d-block w-100" alt="Slide 4">
                 <div class="slide-text">
                     <h1>Escape to the Beach</h1>
                     <p>Experience the ultimate relaxation</p>
@@ -114,15 +130,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <img src="img/yacht.png" class="img-fluid" alt="Image 1">
+                    <img src="img/yacht.png" class="img-fluid service-icon" alt="Image 1">
                     <p>C R U I S E S</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="img/double-decker.png" class="img-fluid" alt="Image 2">
+                    <img src="img/double-decker.png" class="img-fluid service-icon" alt="Image 2">
                     <p>G R O U N D</p>
                 </div>
                 <div class="col-md-4 text-center">
-                     <img src="img/aeroplane.png" class="img-fluid" alt="Image 3">
+                     <img src="img/aeroplane.png" class="img-fluid service-icon" alt="Image 3">
                      <p>F L I G H T</p>
                 </div>
             </div>
@@ -149,7 +165,7 @@
                         <div class="col-lg-12">
                             <img src="img/s1.jpg" class="img-fluid" alt="Image 1">
                             <div class="des-text">
-                                <p class="text-center mt-3"><strong>Destination Name 1</strong></p>
+                                <h1 class="text-center mt-3"><strong>Alaska</strong></h1>
                                 <a href="#" class="btn btn-primary btn-lg">Book Now</a>
                             </div>
                         </div>
@@ -159,7 +175,7 @@
                         <div class="col-lg-12">
                             <img src="img/s2.jpg" class="img-fluid" alt="Image 2">
                             <div class="des-text">
-                                <p class="text-center mt-3"><strong>Greece</strong></p>
+                                <h1 class="text-center mt-3"><strong>Greece</strong></h1>
                                 <a href="#" class="btn btn-primary btn-lg">Book Now</a>
                             </div>
                         </div>
@@ -170,7 +186,7 @@
                         <div class="col-lg-12">
                             <img src="img/s3.jpg" class="img-fluid" alt="Image 3">
                             <div class="des-text">
-                                <p class="text-center mt-3"><strong>India</strong></p>
+                                <h1 class="text-center mt-3"><strong>India</strong></h1>
                                 <a href="#" class="btn btn-primary btn-lg">Book Now</a>
                             </div>
                         </div>
@@ -180,7 +196,7 @@
                         <div class="col-lg-12">
                             <img src="img/s4.jpg" class="img-fluid" alt="Image 4">
                             <div class="des-text">
-                                <p class="text-center mt-3"><strong>Korea</strong></p>
+                                <h1 class="text-center mt-3"><strong>Korea</strong></h1>
                                 <a href="#" class="btn btn-primary btn-lg">Book Now</a>
                             </div>
                         </div>
@@ -199,7 +215,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>About Us</h2>
+                    <h2>A B O U T  U S</h2>
                     <p class="lead">At our travel agency, we are dedicated to helping you create the perfect vacation. Whether you want to explore new cultures, relax on a beach, or embark on an adventure, we are here to make your travel dreams a reality.</p>
                     <p>Our experienced travel advisors will work with you to create a custom itinerary that meets your needs and budget. We pride ourselves on providing personalized service and attention to detail, so you can sit back, relax, and enjoy your trip.</p>
                 </div>
@@ -209,6 +225,118 @@
             </div>
         </div>
     </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">MEMBER LOGIN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body login-box">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputUsername">Username</label>
+                            <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <a href="#" data-toggle="modal" data-target="#forgotModal" class="text-primary font-weight-bold">
+                                        Forgot Password?
+                                    </a>   
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary mx-auto login-btn">Login</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>New Member? 
+                                    <a href="#" data-toggle="modal" data-target="#signupModal" class="text-primary font-weight-bold">
+                                        Sign Up
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign-up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">SIGN UP</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary mx-auto">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot password Modal -->
+    <div class="modal fade" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="forgotModalLabel">Forgot Password</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Registered email">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary mx-auto">Send Email</button>
+                    <button type="button" class="btn btn-primary mx-auto" data-toggle="modal" data-target="#loginModal">Back to Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark py-5">
