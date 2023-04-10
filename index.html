@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>GoodTimesTravel | Home</title>
+    <title>Home</title>
         
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,8 +17,8 @@
 <body>
     <!-- Navbar -->
     <!-- <?php include 'navbar.php'; ?> -->
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
@@ -45,9 +45,9 @@
                         <a class="navbar-brand" href="../templates/index.html">[Insert Logo Here]</a>
                     </li>
                     <li class="nav-item my-1">
-                        <button class="btn btn-secondary btn-light" type="button" data-toggle="modal" data-target="#loginModal">
+                        <a href="../templates/login.html" class="btn btn-secondary btn-light" role="button">
                             <i class="fas fa-user my-2 my-sm-0"></i> Login
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -112,13 +112,13 @@
     <section class="ourservice my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3>O U R  S E R V I C E S</h3>
+                <div class="col-md-12">
+                    <h3 class="font-weight-bold">Our Services</h3>
                     <p>We provide a range of tours to ensure that our customers have a hassle-free and enjoyable travel experience</p>
                 </div>
             </div>
         </div>
-        <br/>
+        <br/><br/>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center">
@@ -143,8 +143,8 @@
     <section class="featdestination bg-light py-5 my-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3>F E A T U R E D  D E S T I N A T I O N</h3>
+                <div class="col-md-12">
+                    <h3 class="font-weight-bold">Featured Destinations</h3>
                 </div>
             </div>
         </div>
@@ -204,7 +204,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>A B O U T  U S</h2>
+                    <h2 class="font-weight-bold">About Us</h2>
                     <p class="lead">At our travel agency, we are dedicated to helping you create the perfect vacation. Whether you want to explore new cultures, relax on a beach, or embark on an adventure, we are here to make your travel dreams a reality.</p>
                     <p>Our experienced travel advisors will work with you to create a custom itinerary that meets your needs and budget. We pride ourselves on providing personalized service and attention to detail, so you can sit back, relax, and enjoy your trip.</p>
                 </div>
@@ -220,7 +220,7 @@
     <!-- Section 4 -->
     <section class="newsletter bg-light py-5">
         <div class="intro-header"> 
-            <div class="container"  align="center">
+            <div class="container" align="center">
                 <div class="tab-content custom-tab-content" align="center">
                     <div class="subscribe-panel">
                         <h1>NEWSLETTER</h1>
@@ -328,36 +328,11 @@
         </div>
     </div>
 
-    <!-- Forgot password Modal -->
-    <div class="modal" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="forgotModalLabel">Forgot Password</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="inputEmail">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Registered email">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer text-center">
-                    <button type="button" class="btn btn-primary mx-auto" data-toggle="modal" data-miss="modal" data-target="#loginModal">Send Email</button>
-                    <button type="button" class="btn btn-primary mx-auto" data-toggle="modal" data-miss="modal" data-target="#loginModal">Back to Login</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Footer -->
     <!-- <?php include 'footer.php'; ?> -->
-    <footer class="footer bg-dark text-white py-5">
+    <footer class="footer bg-dark text-white">
         <div class="container">
+            <br/>
             <div class="row">
                 <div class="col-md-3">
                     <h4>Connect With Us</h4>
@@ -410,7 +385,7 @@
                 </div>
                 <div class="col-md-3">
                     <h4>Address</h4>
-                    <p>123 Main Street<br>Anytown, USA 12345</p>
+                    <p>E-G-25, Gala Street Mall,<br>Jalan Tun Jugah,<br>93350 Kuching,<br>Sarawak</p>
                 </div>
                 <div class="col-md-3">
                     <h4>Office Hours</h4>
