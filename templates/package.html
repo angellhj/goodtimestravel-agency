@@ -16,11 +16,11 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
-        <div class="container-fluid">
-            
+    <!-- <?php include 'navbar.php'; ?> -->
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
@@ -37,17 +37,17 @@
                         <a class="nav-link" href="templates/flight.html">Flight</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="templates/2ToGo.html">2 To Go</a>
+                        <a class="nav-link" href="templates/2_to_go.html">2 To Go</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="navbar-brand" href="index.html">[Insert Logo Here]</a>
+                        <a class="navbar-brand" href="../index.html">[LOGO]</a>
                     </li>
                     <li class="nav-item my-1">
-                        <button class="btn btn-secondary btn-light" type="button" data-toggle="modal" data-target="#loginModal">
+                        <a href="../templates/login.html" class="btn btn-secondary btn-light" role="button">
                             <i class="fas fa-user my-2 my-sm-0"></i> Login
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </div>
