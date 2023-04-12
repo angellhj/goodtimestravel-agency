@@ -7,15 +7,113 @@
         
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <style>
+.login{
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: top;
+ background-image:url('../img/back.jpg');
+}
+
+.login-box{
+  position: relative;
+  width: 400px;
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.blurred-box:after{
+ content: '';
+ background: inherit; 
+ position: absolute;
+ left: -25px;
+ right: 0;
+ top: -25px; 
+ bottom: 0;
+ box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+ filter: blur(10px);
+}
+
+
+/* Form which you dont need */
+.login-box{
+  position: relative;
+  margin-top: 50px;
+  z-index: 1;
+  color: white;
+}
+
+.login-box:after {
+    content: '';
+ background: inherit; 
+ position: absolute;
+ left: -25px;
+ right: 0;
+ top: -25px; 
+ bottom: 0;
+ box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+ filter: blur(10px);
+}
+
+
+
+    </style>
 </head>
 
-<body>
-    <div class="container">
+<body class="login">
+    <div class="container mx-auto my-auto">
+        <div class="login-box">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Member Login</h2>
+                </div>
+            </div>
+            
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="inputusername" placeholder="Username">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="inputpassword" placeholder="Password">
+                </div>
+            </form>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="../index.html" type="submit" class="btn btn-primary mx-auto login-btn" role="button">
+                            Login
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>New Member? 
+                            <a href="sign_up.html" class="text-primary font-weight-bold">
+                                Sign Up
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h2>Member Login</h2>
@@ -51,20 +149,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary mx-auto login-btn">Login</button>
+                    <a href="../index.html" type="submit" class="btn btn-primary mx-auto login-btn" role="button">
+                        Login
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <p>New Member? 
-                        <a href="../templates/sign_up.html" class="text-primary font-weight-bold">
+                        <a href="sign_up.html" class="text-primary font-weight-bold">
                             Sign Up
                         </a>
                     </p>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Forgot password Modal -->
     <div class="modal" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalLabel" aria-hidden="true">
