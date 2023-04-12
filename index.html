@@ -45,7 +45,7 @@
                         <a class="navbar-brand" href="../index.html">[LOGO]</a>
                     </li>
                     <li class="nav-item my-1">
-                        <a href="../templates/login.html" class="btn btn-secondary btn-light" role="button">
+                        <a href="/templates/login.html" class="btn btn-secondary btn-light" role="button">
                             <i class="fas fa-user my-2 my-sm-0"></i> Login
                         </a>
                     </li>
@@ -240,93 +240,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Login Modal -->
-    <div class="modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitle">MEMBER LOGIN</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body login-box">
-                    <form>
-                        <div class="form-group">
-                            <label for="inputUsername">Username</label>
-                            <input type="text" class="form-control" id="inputUsername" placeholder="Username">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPassword">Password</label>
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                        </div>
-                        <div class="form-group form-check">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="checkbox" class="form-check-input" id="rememberMe">
-                                    <label class="form-check-label" for="rememberMe">Remember me</label>
-                                </div>
-                                <div class="col-md-6 text-right">
-                                    <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#forgotModal" class="text-primary font-weight-bold">
-                                        Forgot Password?
-                                    </a>   
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary mx-auto login-btn">Login</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>New Member? 
-                                    <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#signupModal" class="text-primary font-weight-bold">
-                                        Sign Up
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sign-up Modal -->
-    <div class="modal" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="signupModalLabel">SIGN UP</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="inputEmail">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputPassword">Password</label>
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary mx-auto" data-toggle="modal" data-dismiss="modal" data-target="#loginModal">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <!-- <?php include 'footer.php'; ?> -->
