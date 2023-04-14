@@ -91,13 +91,14 @@
 }
 
 /* login page */
-.login{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
-    background-image:url('../img/back.jpg');
-   }
+.user {
+    display: flex;
+    height: 100vh;
+}
+
+.user-box {
+    margin: auto;
+}
 
 /* package page */
 .package-card {

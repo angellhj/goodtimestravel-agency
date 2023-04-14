@@ -7,40 +7,144 @@
         
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Sign Up</h2>
+<body class="user">
+    <div class="container user-box">
+        <div class="row justify-content-center">
+            <div class="col-md-8 rounded shadow">
+                <div class="row pt-3">
+                    <div class="col-md-12">
+                        <h2>Sign Up</h2>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <form method="post" action="../templates/login.html">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-mail-bulk"></i></span>
+                                        </div>
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="phoneNo" placeholder="Phone No.">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="username" placeholder="Username">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="password" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="comfirmPassword" placeholder="Comfirm Password">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-3 mb-3">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary btn-block signup-btn">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- <div class="form-row mt-3 mb-3">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary btn-block signup-btn">Submit</button>
+                    </div>
+                </div> -->
+
+                <!-- <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" id="inputfirstname" placeholder="First Name">
+
+                                
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" id="inputlastname" placeholder="Last Name">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                </div>
+                                <input type="text" class="form-control" id="inputpassword" placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <a href="../index.html" type="submit" class="btn btn-primary btn-block login-btn" role="button">
+                            Login
+                        </a>
+                    </div>
+                </div> -->
             </div>
-        </div>
-
-        <div class="container">
-            <form>
-                <div class="form-group">
-                    <label for="inputEmail">Username</label>
-                    <input type="text" class="form-control" id="inputusername" placeholder="Username">
-                </div>
-                <div class="form-group">
-                    <label for="inputEmail">Email address</label>
-                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="inputPassword">Password</label>
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                </div>
-            </form>
-        </div>
-
-        <div class="container">
-            <a href="../templates/login.html" class="btn btn-primary mx-auto" role="button">Submit</button>
         </div>
     </div>
 
