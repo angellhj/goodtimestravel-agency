@@ -17,7 +17,7 @@
 <body>
     <!-- Navbar -->
     <!-- <?php include 'navbar.php'; ?> -->
-    <nav class="navbar navbar-expand-lg bg-dark py-2 mb-5 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark p-3 mb-5 fixed-top">
         <div class="container">
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,29 +26,29 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/tour.html">Tours</a>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="templates/tour.html">TOURS</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="templates/cruise.html">CRUISES</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="templates/ground.html">GROUND</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="templates/flight.html">FLIGHT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="templates/cruise.html">Cruises</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/ground.html">Ground</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/flight.html">Flight</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/2_to_go.html">2 To Go</a>
+                        <a class="nav-link" href="templates/2_to_go.html">2 TO GO</a>
                     </li>
                 </ul>
 
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="../index.html">[LOGO]</a>
+                    <li class="nav-item mr-4">
+                        <a class="navbar-brand" href="../index.html"><img src="img/logo.png" height="40" alt="Logo"></a>
                     </li>
-                    <li class="nav-item my-1">
-                        <a href="templates/login.html" class="btn btn-secondary btn-light" role="button">
+                    <li class="nav-item m-1">
+                        <a href="templates/login.html" class="btn btn-login btn-secondary btn-light" role="button">
                             <i class="fas fa-user my-2 my-sm-0"></i> Login
                         </a>
                     </li>
@@ -72,10 +72,10 @@
             <div class="carousel-item active">
                 <!-- first background image -->
                 <img src="img/slide1.jpg" class="d-block w-100" alt="Slide 1">
-                <div class="carousel-caption">
+                <div class="carousel-caption justify-content-center align-items-center">
                     <h1 class="animated fadeRight">Caption Animation</h1>
                     <p class="animated fadeRight">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                    <p class="animated fadeRight"><a href="#" class="btn btn-more bg-transparent">Learn More</a></p>
+                    <p class="animated fadeRight"><a href="#" class="btn btn-more">Learn More</a></p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -84,7 +84,7 @@
                 <div class="carousel-caption">
                     <h1 class="animated fadeRight">Caption Animation</h1>
                     <p class="animated fadeRight">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                    <p class="animated fadeRight"><a href="#" class="btn btn-more bg-transparent">Learn More</a></p>
+                    <p class="animated fadeRight"><a href="#" class="btn btn-more">Learn More</a></p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -93,7 +93,7 @@
                 <div class="carousel-caption">
                     <h1 class="animated fadeRight">Caption Animation</h1>
                     <p class="animated fadeRight">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                    <p class="animated fadeRight"><a href="#" class="btn btn-more bg-transparent">Learn More</a></p>
+                    <p class="animated fadeRight"><a href="#" class="btn btn-more">Learn More</a></p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -102,7 +102,7 @@
                 <div class="carousel-caption">
                     <h1 class="animated fadeRight">Caption Animation</h1>
                     <p class="animated fadeRight">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                    <p class="animated fadeRight"><a href="#" class="btn btn-more bg-transparent">Learn More</a></p>
+                    <p class="animated fadeRight"><a href="#" class="btn btn-more">Learn More</a></p>
                 </div>
             </div>
         </div>
@@ -144,20 +144,17 @@
     </div>
 
     <!-- Featured Destination -->
-    <section class="featdestination bg-light p-5 mt-5">
+    <div class="container-fluid featdestination bg-light p-5 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="font-weight-bold">Featured Destinations</h3>
                 </div>
             </div>
-        </div>
-
-        <div class="container mt-1">
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row mt-5">
+                <div class="col-md-6">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                             <img src="img/s1.jpg" class="img-fluid" alt="Image 1">
                             <div class="des-text">
                                 <h1 class="text-center mt-3"><strong>Alaska</strong></h1>
@@ -167,7 +164,7 @@
                     </div>
                     <br/>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                             <img src="img/s2.jpg" class="img-fluid" alt="Image 2">
                             <div class="des-text">
                                 <h1 class="text-center mt-3"><strong>Greece</strong></h1>
@@ -176,10 +173,10 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-6">
+    
+                <div class="col-md-6">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                             <img src="img/s3.jpg" class="img-fluid" alt="Image 3">
                             <div class="des-text">
                                 <h1 class="text-center mt-3"><strong>India</strong></h1>
@@ -189,7 +186,7 @@
                     </div>
                     <br/>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-md-12">
                             <img src="img/s4.jpg" class="img-fluid" alt="Image 4">
                             <div class="des-text">
                                 <h1 class="text-center mt-3"><strong>Korea</strong></h1>
@@ -200,51 +197,22 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- About Us -->
-    <section class="aboutus p-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2 class="font-weight-bold">About Us</h2>
-                    <p class="lead">At our travel agency, we are dedicated to helping you create the perfect vacation. Whether you want to explore new cultures, relax on a beach, or embark on an adventure, we are here to make your travel dreams a reality.</p>
-                    <p>Our experienced travel advisors will work with you to create a custom itinerary that meets your needs and budget. We pride ourselves on providing personalized service and attention to detail, so you can sit back, relax, and enjoy your trip.</p>
-                </div>
+    <div class="container aboutus p-5 mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="font-weight-bold">About Us</h2>
+                <p class="lead">At our travel agency, we are dedicated to helping you create the perfect vacation. Whether you want to explore new cultures, relax on a beach, or embark on an adventure, we are here to make your travel dreams a reality.</p>
+                <p>Our experienced travel advisors will work with you to create a custom itinerary that meets your needs and budget. We pride ourselves on providing personalized service and attention to detail, so you can sit back, relax, and enjoy your trip.</p>
+            </div>
 
-                <div class="col-lg-6">
-                    <img src="img/agent.jpg" class="img-fluid" alt="About Us Image">
-                </div>
+            <div class="col-lg-6">
+                <img src="img/agent.jpg" class="img-fluid" alt="About Us Image">
             </div>
         </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter bg-light p-5 mt-5">
-        <div class="intro-header"> 
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center">
-                        <h1>NEWSLETTER</h1>
-                        <p>Subscribe to our weekly Newsletter and stay tuned.</p>
-
-                        <form method="post" action="">
-                            <div class="col-md-12 justify-content-center">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control input-lg" name="email" id="email"  placeholder="Enter your Email"/>
-                                </div>
-                            </div>
-                            <br/>
-                            <a href="#" type="submit" class="btn btn-primary subscribe-btn" role="button">
-                                Subscribe Now
-                            </a>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <!-- <?php include 'footer.php'; ?> -->
