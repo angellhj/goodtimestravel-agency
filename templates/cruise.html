@@ -17,35 +17,38 @@
 <body>
     <!-- Navbar -->
     <!-- <?php include 'navbar.php'; ?> -->
-    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark p-3 mb-5 fixed-top">
         <div class="container">
+            <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/tour.html">Tours</a>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/tour.html">TOURS</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/cruise.html">CRUISES</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/ground.html">GROUND</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/flight.html">FLIGHT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="templates/cruise.html">Cruises</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/ground.html">Ground</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/flight.html">Flight</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/2_to_go.html">2 To Go</a>
+                        <a class="nav-link" href="../templates/2_to_go.html">2 TO GO</a>
                     </li>
                 </ul>
+
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="../index.html">[LOGO]</a>
+                    <li class="nav-item mr-4">
+                        <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" height="40" alt="Logo"></a>
                     </li>
-                    <li class="nav-item my-1">
-                        <a href="../templates/login.html" class="btn btn-secondary btn-light" role="button">
+                    <li class="nav-item m-1">
+                        <a href="templates/login.html" class="btn btn-login btn-secondary btn-light" role="button">
                             <i class="fas fa-user my-2 my-sm-0"></i> Login
                         </a>
                     </li>
@@ -53,25 +56,9 @@
             </div>
         </div>
     </nav>
-
-    <!-- Breadcrumbs -->
-    <!-- <section class="my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav aria-label="breadcrumb my-5">
-                        <ol class="breadcrumb justify-content-start">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Cruises</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section> -->
       
-    <!-- Section 1 -->
-    <div class="jumbotron jumbotron-fluid">
+    <!-- Header -->
+    <div class="jumbotron jumbotron-fluid mt-5">
         <div class="container">
           <h1 class="display-4">CRUISES</h1>
           <p class="lead">
@@ -82,99 +69,142 @@
         </div>
     </div>
 
-    <!-- Section 2 -->
-    <section class="my-5">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-3">
-                    <div class="tour-card">
-                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Destination 1</h5>
-                            <p>description</p>
-                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="tour-card">
-                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Destination 2</h5>
-                            <p>description</p>
-                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="tour-card">
-                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Destination 3</h5>
-                            <p>description</p>
-                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="tour-card">
-                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Destination 4</h5>
-                            <p>description</p>
-                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
-                        </div>
+    <!-- Destinations -->
+    <div class="container mb-5">
+        <div class="row mb-5">
+            <div class="col-md-3">
+                <div class="box-container">
+                    <div class="box">
+                        <a href="package.html">
+                            <img src="../img/s1.jpg"  class="h-100 w-100" alt="Destination">
+                            <div class="caption p-4">
+                                <h4 class="font-weight-bold text-white text-center">destination name</h4>
+                            </div>
+                            <div class="view p-4">
+                                <p class="font-weight-bold text-white text-center">Click to view more</p>
+                            </div>
+                            <div class="cover"></div>
+                        </a>
                     </div>
                 </div>
             </div>
-    
-            <div class="row mb-5">
-                <div class="col-md-3">
-                    <div class="tour-card">
-                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Destination 5</h5>
-                            <p>description</p>
-                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
-                        </div>
+            <div class="col-md-3">
+                <div class="box-container">
+                    <div class="box">
+                        <a href="package.html">
+                            <img src="../img/s1.jpg"  class="h-100 w-100" alt="Destination">
+                            <div class="caption p-4">
+                                <h4 class="font-weight-bold text-white text-center">destination name</h4>
+                            </div>
+                            <div class="view p-4">
+                                <p class="font-weight-bold text-white text-center">Click to view more</p>
+                            </div>
+                            <div class="cover"></div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="tour-card">
-                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Destination 6</h5>
-                            <p>description</p>
-                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
-                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-container">
+                    <div class="box">
+                        <a href="package.html">
+                            <img src="../img/s1.jpg"  class="h-100 w-100" alt="Destination">
+                            <div class="caption p-4">
+                                <h4 class="font-weight-bold text-white text-center">destination name</h4>
+                            </div>
+                            <div class="view p-4">
+                                <p class="font-weight-bold text-white text-center">Click to view more</p>
+                            </div>
+                            <div class="cover"></div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="tour-card">
-                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Destination 7</h5>
-                            <p>description</p>
-                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="tour-card">
-                        <img class="card-img-top" src="../img/s1.jpg" alt="Destination 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Destination 8</h5>
-                            <p>description</p>
-                            <a href="package.html" class="btn btn-primary btn-sm">View More</a>
-                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-container">
+                    <div class="box">
+                        <a href="package.html">
+                            <img src="../img/s1.jpg"  class="h-100 w-100" alt="Destination">
+                            <div class="caption p-4">
+                                <h4 class="font-weight-bold text-white text-center">destination name</h4>
+                            </div>
+                            <div class="view p-4">
+                                <p class="font-weight-bold text-white text-center">Click to view more</p>
+                            </div>
+                            <div class="cover"></div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <br />
-    <br />
+
+        <div class="row mb-5">
+            <div class="col-md-3">
+                <div class="box-container">
+                    <div class="box">
+                        <a href="package.html">
+                            <img src="../img/s1.jpg"  class="h-100 w-100" alt="Destination">
+                            <div class="caption p-4">
+                                <h4 class="font-weight-bold text-white text-center">destination name</h4>
+                            </div>
+                            <div class="view p-4">
+                                <p class="font-weight-bold text-white text-center">Click to view more</p>
+                            </div>
+                            <div class="cover"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-container">
+                    <div class="box">
+                        <a href="package.html">
+                            <img src="../img/s1.jpg"  class="h-100 w-100" alt="Destination">
+                            <div class="caption p-4">
+                                <h4 class="font-weight-bold text-white text-center">destination name</h4>
+                            </div>
+                            <div class="view p-4">
+                                <p class="font-weight-bold text-white text-center">Click to view more</p>
+                            </div>
+                            <div class="cover"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-container">
+                    <div class="box">
+                        <a href="package.html">
+                            <img src="../img/s1.jpg"  class="h-100 w-100" alt="Destination">
+                            <div class="caption p-4">
+                                <h4 class="font-weight-bold text-white text-center">destination name</h4>
+                            </div>
+                            <div class="view p-4">
+                                <p class="font-weight-bold text-white text-center">Click to view more</p>
+                            </div>
+                            <div class="cover"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-container">
+                    <div class="box">
+                        <a href="package.html">
+                            <img src="../img/s1.jpg"  class="h-100 w-100" alt="Destination">
+                            <div class="caption p-4">
+                                <h4 class="font-weight-bold text-white text-center">destination name</h4>
+                            </div>
+                            <div class="view p-4">
+                                <p class="font-weight-bold text-white text-center">Click to view more</p>
+                            </div>
+                            <div class="cover"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Pagination -->
     <div class="container">
@@ -204,54 +234,60 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark py-5">
+    <!-- <?php include 'footer.php'; ?> -->
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <h4>Connect With Us</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#"><i class="fab fa-facebook fa-lg mr-2"></i>Facebook</a></li>
-                        <li><a href="#"><i class="fab fa-instagram fa-lg mr-2"></i>Instagram</a></li>
-                        <li><a href="#"><i class="fab fa-whatsapp fa-lg mr-2"></i>WhatsApp</a></li>
+                <div class="col-md-3 col-xs-6">
+                    <h6>CONNECT WITH US</h6>
+                    <ul class="social-icons list-unstyled ">
+                        <li class="d-inline-block"><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="d-inline-block"><a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="d-inline-block"><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h4>Explore</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
+
+                <div class="col-md-3 col-xs-6">
+                    <h6>EXPLORE</h6>
+                    <ul class="footer-links list-unstyled">
+                        <li><a class="footer-link" href="templates/contact_us.html">Contact Us</a></li>
+                        <li><a class="footer-link" href="templates/about_us.html">About Us</a></li>
+                        <li><a class="footer-link" href="templates/privacy_policy.html">Privacy Policy</a></li>
+                        <li><a class="footer-link" href="templates/terms_condition.html">Terms and Conditions</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h4>Good Times Travel</h4>
-                    <p>123 Main Street<br>Anytown, USA 12345</p>
+    
+                <div class="col-md-3 col-xs-6">
+                    <h6>ADDRESS</h6>
+                    <p>E-G-25, Gala Street Mall,<br>Jalan Tun Jugah,<br>93350 Kuching,<br>Sarawak</p>
                 </div>
-                <div class="col-md-3">
-                    <h4>Office Hours</h4>
-                    <table class="table table-borderless">
+
+                <div class="col-md-3 col-xs-6">
+                    <h6>OFFICE HOURS</h6>
+                    <table class="table table-borderless text-white">
                         <tbody>
-                        <tr>
-                            <td>Monday - Friday:</td>
-                            <td>9:00 AM - 5:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday:</td>
-                            <td>10:00 AM - 2:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Sunday:</td>
-                            <td>Closed</td>
-                        </tr>
+                            <tr>
+                                <td>Monday - Friday:</td>
+                                <td>9:00 AM - 5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday:</td>
+                                <td>10:00 AM - 2:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>Closed</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                <p>&copy; 2023 Good Times Travel. All rights reserved.</p>
+            <hr class="bg-light">
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                        <a class="text-white font-weight-bold" href="#">Good Times Travel</a>.
+                    </p>
                 </div>
             </div>
         </div>
