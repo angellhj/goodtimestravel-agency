@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-md-12 border">
+                <a class="navbar-brand" href="../index.html">
+                    <!-- <img src="../img/logo.png" height="40" alt="Logo"> -->
+                    [logo]
+                </a>
+            </div>
+            <div class="col-md-12 border">
+                <p>[icons showin the booking stage *middle]</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container date-menu mt-5 mb-5">
+        <div class="row col-md-12 flex-nowrap">
+            <div class="option col-md-2" data-target="div1">
+                <p class="date">1</p>
+                <p class="price">price</p>
+            </div>
+            <div class="option col-md-2" data-target="div2">
+                <p class="date">2</p>
+                <p class="price">price</p>
+            </div>
+            <div class="option col-md-2" data-target="div2">
+                <p class="date">3</p>
+                <p class="price">price</p>
+            </div>
+            <div class="option col-md-2" data-target="div3">
+                <p class="date">4</p>
+                <p class="price">price</p>
+            </div>
+            <div class="option col-md-2" data-target="div4">
+                <p class="date">5</p>
+                <p class="price">price</p>
+            </div>
+            <div class="option col-md-2" data-target="div5">
+                <p class="date">6</p>
+                <p class="price">price</p>
+            </div>
+            <div class="option col-md-2" data-target="div6">
+                <p class="date">7</p>
+                <p class="price">price</p>
+            </div>
+            <div class="option col-md-2" data-target="div6">
+                <p class="date">8</p>
+                <p class="price">price</p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="mt-5 p-3 border">
+                    <h3>Selected Package</h3>
+                    <div class="booking-image-box bg-dark"></div>
+                </div>
+                <div class="mt-5 p-3 border">
+                    <h3>Customer Details</h3>
+                    <a href="../templates/check_out.html" class="btn btn-login btn-secondary btn-light" role="button">
+                        Add 
+                    </a>
+                    <br> 
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">I.C. No.:</label>
+                            <input type="number" id="ic" name="ic" required><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="passport">Passport Details:</label>
+                            <input type="text" id="passport" name="passport"><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Billing Address:</label>
+                            <textarea id="address" name="address" required></textarea><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+
+                            <label for="emergency">Emergency Contact:</label>
+                            <input type="text" id="emergency" name="emergency" required>
+                        </div>
+
+                        <a href="../templates/payment.html" class="btn btn-login btn-secondary btn-light" role="button">
+                            Save
+                        </a>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mt-5 p-3 border ">
+                    <h3>Summary</h3>
+                    <hr>
+                    <p>[package name]</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet. </li>
+                        <li>Lorem ipsum dolor sit amet. </li>
+                    </ul>
+                    <hr>
+                    <p>[show total amount]</p>
+                </div>
+                <div class="mt-5 p-3 border">
+                    <p>[subtotal]</p>
+                    <p>[add-ons *if any]</p>
+                    <hr>
+                    <p>total</p>
+                    <br>
+                    <a href="../templates/payment.html" class="btn btn-login btn-secondary btn-light" role="button">
+                        Proceed to Payment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- <?php include 'footer.php'; ?> -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Connect With Us</h4>
+                    <ul class="list-unstyled">
+                        <li class="d-inline-block">
+                            <a
+                                class="btn btn-lg btn-dark rounded-circle"
+                                style="background-color: #2b52ac;"
+                                href="#!"
+                                role="button"
+                                ><i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a
+                                class="btn btn-lg btn-dark rounded-circle"
+                                style="background-color: #ac2bac;"
+                                href="#!"
+                                role="button">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a
+                                class="btn btn-lg btn-dark rounded-circle"
+                                style="background-color: #2bac58;"
+                                href="#!"
+                                role="button">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Explore</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="footer-link" href="templates/contact_us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="templates/about_us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="templates/privacy_policy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="templates/terms_condition.html">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Address</h4>
+                    <p>123 Main Street<br>Anytown, USA 12345</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Office Hours</h4>
+                    <table class="table table-borderless text-white">
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday:</td>
+                                <td>9:00 AM - 5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday:</td>
+                                <td>10:00 AM - 2:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Good Times Travel. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHJewRx" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

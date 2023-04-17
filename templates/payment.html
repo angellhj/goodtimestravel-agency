@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+        
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-md-12 border">
+                <a class="navbar-brand" href="../index.html">
+                    <!-- <img src="../img/logo.png" height="40" alt="Logo"> -->
+                    [logo]
+                </a>
+            </div>
+            <div class="col-md-12 border">
+                <p>[icons showin the booking stage *middle]</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="mt-5 p-3 border">
+                    <h3>Customer details</h3>
+                    <p>[display package and customer info]</p>
+                </div>
+                <div class="mt-5 p-3 border">
+                    <h3>Payment Method</h3>
+                    <hr>
+                    <input type="radio" id="card" name="payment_method" value="card">
+                    <label for="creditdebit">Credit / Debit Card</label><br>
+                    <input type="radio" id="bank" name="payment_method" value="bank">
+                    <label for="onlinebanking">Online Banking</label><br>
+                    <input type="radio" id="paypal" name="payment_method" value="paypal">
+                    <label for="paypal">PayPal</label>
+
+                    <!-- for card -->
+                    <form>
+                        <div class="form-group">
+                            <label for="chname">Cardholder Name:</label><br>
+                            <input type="text" id="chname" name="chname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardnum">Card Number:</label><br>
+                            <input type="text" id="cardnum" name="cardnum" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expdate">Expiration Date:</label><br>
+                            <input type="text" id="expdate" name="expdate" required>
+
+                            <label for="passport">CVV/CVC Code</label><br>
+                            <input type="text" id="passport" name="passport">
+                        </div>
+                        <input type="checkbox" id="save" name="save_card" value="save">
+                        <label for="save_card">Save card details</label><br>
+                    </form>
+
+                    <!-- for bank -->
+                    <!-- <form>
+                        // add dropdown of bank names
+                        <div class="form-group">
+                            <label for="ahname">Account Holder Name:</label><br>
+                            <input type="text" id="ahname" name="ahname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="accnum">Account Number:</label><br>
+                            <input type="text" id="accnum" name="accnum" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="routnum">Routing Number:</label><br>
+                            <input type="text" id="routnum" name="routnum" required>
+                        </div>
+                    </form> -->
+
+                    <!-- for paypal -->
+                    <!-- <form>
+                        <div class="form-group">
+                            <label for="ppemail">Email:</label><br>
+                            <input type="email" id="ppemail" name="ppemail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pppassword">Password:</label><br>
+                            <input type="password" id="pppassword" name="pppassword" required>
+                        </div>
+                    </form> -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mt-5 p-3 border ">
+                    <h3>Summary</h3>
+                    <hr>
+                    <p>[package name]</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet. </li>
+                        <li>Lorem ipsum dolor sit amet. </li>
+                    </ul>
+                    <hr>
+                    <p>[show total amount]</p>
+                </div>
+                <div class="mt-5 p-3 border">
+                    <p>[subtotal]</p>
+                    <p>[add-ons *if any]</p>
+                    <hr>
+                    <p>total</p>
+                    <br>
+                    <a href="../index.html" class="btn btn-login btn-secondary btn-light" role="button">
+                        Pay Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- <?php include 'footer.php'; ?> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <h6>CONNECT WITH US</h6>
+                    <ul class="social-icons list-unstyled ">
+                        <li class="d-inline-block"><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="d-inline-block"><a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="d-inline-block"><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <h6>EXPLORE</h6>
+                    <ul class="footer-links list-unstyled">
+                        <li><a class="footer-link" href="templates/contact_us.html">Contact Us</a></li>
+                        <li><a class="footer-link" href="templates/about_us.html">About Us</a></li>
+                        <li><a class="footer-link" href="templates/privacy_policy.html">Privacy Policy</a></li>
+                        <li><a class="footer-link" href="templates/terms_condition.html">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3 col-xs-6">
+                    <h6>ADDRESS</h6>
+                    <p>E-G-25, Gala Street Mall,<br>Jalan Tun Jugah,<br>93350 Kuching,<br>Sarawak</p>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <h6>OFFICE HOURS</h6>
+                    <table class="table table-borderless text-white">
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday:</td>
+                                <td>9:00 AM - 5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday:</td>
+                                <td>10:00 AM - 2:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                        <a class="text-white font-weight-bold" href="#">Good Times Travel</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHJewRx" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
