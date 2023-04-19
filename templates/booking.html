@@ -16,15 +16,36 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col-md-12 border">
-                <a class="navbar-brand" href="../index.html">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a class="navbar-brand mx-auto" href="../index.html">
                     <!-- <img src="../img/logo.png" height="40" alt="Logo"> -->
                     [logo]
                 </a>
             </div>
-            <div class="col-md-12 border">
-                <p>[icons showin the booking stage *middle]</p>
+            <div class="col-md-12 text-center">
+                <ol class="FormStepList mx-auto">
+                    <li class="FormStepList-item">
+                        <span class="FormStepIcon is-passed" id="this">
+                            <span class="FormStepIcon-circle">1</span>
+                            <span class="FormStepIcon-title">Choose Package</span>
+                        </span>
+                    </li>
+                  
+                    <li class="FormStepList-item">
+                        <span class="FormStepIcon is-active">
+                            <span class="FormStepIcon-circle">2</span>
+                            <span class="FormStepIcon-title">Enter Info</span>
+                        </span>
+                    </li>
+                  
+                    <li class="FormStepList-item">
+                        <span class="FormStepIcon FormStepIcon--last">
+                            <span class="FormStepIcon-circle">3</span>
+                            <span class="FormStepIcon-title">Make Payment</span>
+                        </span>
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
@@ -69,45 +90,62 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-md-8">
-                <div class="mt-5 p-3 border">
+                <div class="booking-box mt-5 p-3">
                     <h3>Selected Package</h3>
                     <div class="booking-image-box bg-dark"></div>
                 </div>
-                <div class="mt-5 p-3 border">
+                <div class="booking-box mt-4 p-3">
                     <h3>Customer Details</h3>
                     <a href="../templates/check_out.html" class="btn btn-login btn-secondary btn-light" role="button">
-                        Add 
+                        [show saved name] 
                     </a>
-                    <br> 
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required><br>
+                    <a href="../templates/check_out.html" class="btn btn-login btn-secondary btn-light" role="button">
+                        Add +
+                    </a>
+                    <hr>
+                    <form method="post" action="#" class="customerinfoform">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="fname">First Name</label>
+                                <input type="text" class="form-control" id="fname" name="fname" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lname">Last Name</label><br>
+                                <input type="text" class="form-control" id="lname" name="lname" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required><br>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="ic">I.C.</label><br>
+                                <input type="text" class="form-control" id="ic" name="ic" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="passport">Passport Details:</label>
+                                <input type="text" class="form-control" id="passport" name="passport">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">I.C. No.:</label>
-                            <input type="number" id="ic" name="ic" required><br>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="passport">Passport Details:</label>
-                            <input type="text" id="passport" name="passport"><br>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="address">Billing Address:</label>
+                                <textarea id="address" class="form-control" id="address" name="address" required></textarea>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="address">Billing Address:</label>
-                            <textarea id="address" name="address" required></textarea><br>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="emergency">Emergency Contact:</label>
+                                <input type="text" class="form-control" id="emergency" name="emergency" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone" required>
-
-                            <label for="emergency">Emergency Contact:</label>
-                            <input type="text" id="emergency" name="emergency" required>
-                        </div>
-
                         <a href="../templates/payment.html" class="btn btn-login btn-secondary btn-light" role="button">
                             Save
                         </a>
@@ -115,7 +153,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="mt-5 p-3 border ">
+                <div class="booking-box mt-5 p-3">
                     <h3>Summary</h3>
                     <hr>
                     <p>[package name]</p>
@@ -126,7 +164,7 @@
                     <hr>
                     <p>[show total amount]</p>
                 </div>
-                <div class="mt-5 p-3 border">
+                <div class="booking-box mt-5 p-3 border">
                     <p>[subtotal]</p>
                     <p>[add-ons *if any]</p>
                     <hr>
@@ -226,6 +264,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var step = document.getElementById('this');
+        step.addEventListener('click', function() {
+            history.back();
+        });
+
+        // const progressBars = document.querySelectorAll('.progress-bar[data-page]');
+        // progressBars.forEach(progressBar => {
+        //     progressBar.addEventListener('click', () => {
+        //         const page = parseInt(progressBar.dataset.page);
+        //         window.history.go(-(page - 1));
+        //     });
+        // });
+    </script>
 
     <!-- Bootstrap JS (optional) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
