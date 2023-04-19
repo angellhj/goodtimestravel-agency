@@ -16,15 +16,36 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row text-center">
-            <div class="col-md-12 border">
-                <a class="navbar-brand" href="../index.html">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a class="navbar-brand mx-auto" href="../index.html">
                     <!-- <img src="../img/logo.png" height="40" alt="Logo"> -->
                     [logo]
                 </a>
             </div>
-            <div class="col-md-12 border">
-                <p>[icons showin the booking stage *middle]</p>
+            <div class="col-md-12 text-center">
+                <ol class="FormStepList mx-auto">
+                    <li class="FormStepList-item">
+                        <span class="FormStepIcon is-passed">
+                            <span class="FormStepIcon-circle">1</span>
+                            <span class="FormStepIcon-title">Choose Package</span>
+                        </span>
+                    </li>
+                  
+                    <li class="FormStepList-item">
+                        <span class="FormStepIcon is-passed" id="this">
+                            <span class="FormStepIcon-circle">2</span>
+                            <span class="FormStepIcon-title">Enter Info</span>
+                        </span>
+                    </li>
+                  
+                    <li class="FormStepList-item">
+                        <span class="FormStepIcon FormStepIcon--last is-active">
+                            <span class="FormStepIcon-circle">3</span>
+                            <span class="FormStepIcon-title">Make Payment</span>
+                        </span>
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
@@ -32,11 +53,11 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-md-8">
-                <div class="mt-5 p-3 border">
+                <div class="payment-box mt-5 p-3">
                     <h3>Customer details</h3>
                     <p>[display package and customer info]</p>
                 </div>
-                <div class="mt-5 p-3 border">
+                <div class="payment-box mt-4 p-3">
                     <h3>Payment Method</h3>
                     <hr>
                     <input type="radio" id="card" name="payment_method" value="card">
@@ -45,60 +66,84 @@
                     <label for="onlinebanking">Online Banking</label><br>
                     <input type="radio" id="paypal" name="payment_method" value="paypal">
                     <label for="paypal">PayPal</label>
-
+                    <hr>
                     <!-- for card -->
-                    <form>
-                        <div class="form-group">
-                            <label for="chname">Cardholder Name:</label><br>
-                            <input type="text" id="chname" name="chname" required>
+                    <form method="post" action="#" class="creditdebitform">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="chname">Name</label><br>
+                                <input type="text" class="form-control" id="chname" name="chname" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="cardnum">Card Number</label><br>
+                                <input type="text" class="form-control" id="cardnum" name="cardnum" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="cardnum">Card Number:</label><br>
-                            <input type="text" id="cardnum" name="cardnum" required>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="expdate">Expiration Date</label><br>
+                                <input type="text" class="form-control" id="expdate" name="expdate" placeholder="MM/YY" required>
+                            </div>    
+                            <div class="form-group col-md-3">
+                                <label for="passport">CVV/CVC</label><br>
+                                <input type="text" class="form-control" id="cvvcvc" name="cvvcvc" placeholder="Username" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span>*CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="expdate">Expiration Date:</label><br>
-                            <input type="text" id="expdate" name="expdate" required>
-
-                            <label for="passport">CVV/CVC Code</label><br>
-                            <input type="text" id="passport" name="passport">
-                        </div>
-                        <input type="checkbox" id="save" name="save_card" value="save">
-                        <label for="save_card">Save card details</label><br>
+                        <input type="checkbox" class="mr-md-1" id="save" name="save_card" value="save">
+                        <label for="save_card">Save card details</label>
                     </form>
 
                     <!-- for bank -->
-                    <!-- <form>
-                        // add dropdown of bank names
-                        <div class="form-group">
-                            <label for="ahname">Account Holder Name:</label><br>
-                            <input type="text" id="ahname" name="ahname" required>
+                    <!-- <form method="post" action="#" class="bankform">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="bankname">Choose bank:</label>
+                                <select class="form-select ml-2" id="exampleSelect">
+                                    <option selected> </option>
+                                    <option value="option1">CIMB</option>
+                                    <option value="option2">Maybank</option>
+                                    <option value="option3">Public Bank</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="accnum">Account Number:</label><br>
-                            <input type="text" id="accnum" name="accnum" required>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="chname">Name</label><br>
+                                <input type="text" class="form-control" id="chname" name="chname" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="routnum">Routing Number:</label><br>
-                            <input type="text" id="routnum" name="routnum" required>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="cardnum">Account Number</label><br>
+                                <input type="text" class="form-control" id="cardnum" name="cardnum" required>
+                            </div>
                         </div>
+                        <input type="checkbox" class="mr-md-1" id="save" name="save_card" value="save">
+                        <label for="save_card">Save bank details</label>
                     </form> -->
 
                     <!-- for paypal -->
-                    <!-- <form>
-                        <div class="form-group">
-                            <label for="ppemail">Email:</label><br>
-                            <input type="email" id="ppemail" name="ppemail" required>
+                    <!-- <form method="post" action="#" class="bankform">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="chname">Email</label><br>
+                                <input type="text" class="form-control" id="chname" name="chname" required>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="pppassword">Password:</label><br>
-                            <input type="password" id="pppassword" name="pppassword" required>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="cardnum">Password</label><br>
+                                <input type="text" class="form-control" id="cardnum" name="cardnum" required>
+                            </div>
                         </div>
                     </form> -->
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="mt-5 p-3 border ">
+                <div class="payment-box mt-5 p-3">
                     <h3>Summary</h3>
                     <hr>
                     <p>[package name]</p>
@@ -109,7 +154,7 @@
                     <hr>
                     <p>[show total amount]</p>
                 </div>
-                <div class="mt-5 p-3 border">
+                <div class="payment-box mt-5 p-3">
                     <p>[subtotal]</p>
                     <p>[add-ons *if any]</p>
                     <hr>
@@ -182,6 +227,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var step = document.getElementById('this');
+        step.addEventListener('click', function() {
+            history.back();
+        });
+
+        // const progressBars = document.querySelectorAll('.progress-bar[data-page]');
+        // progressBars.forEach(progressBar => {
+        //     progressBar.addEventListener('click', () => {
+        //         const page = parseInt(progressBar.dataset.page);
+        //         window.history.go(-(page - 1));
+        //     });
+        // });
+    </script>
 
     <!-- Bootstrap JS (optional) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

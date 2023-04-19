@@ -1,56 +1,55 @@
 /* navbae.php */
-.navbar .nav-link{
+.navbar .nav-link {
     color: #000;
     font-weight: bold;
     font-size:16px;
 }
-.navbar .nav-link:hover{
+.navbar .nav-link:hover {
     text-decoration: underline;
 }
-.btn-login{
+.btn-login {
     border-radius:70px;
     font-size:16px;
-    background-color: #F4D03F;
     color: #000;
     border: none;
 }
-.navbar-brand img{
+.navbar-brand img {
     max-height:100%;
     max-width:100%;
 }
 
 
 /* footer.php */
-.footer{
+.footer {
     background-color:#26272b;
     padding:45px 0 20px;
     font-size:15px;
     line-height:24px;
     color:#737373;
 }
-.footer h6{
+.footer h6 {
     color:#fff;
     margin-top:5px;
     letter-spacing:2px
 }
-.footer a{
+.footer a {
     color:#737373;
 }
-.footer a:hover{
+.footer a:hover {
     color:#3366cc;
     text-decoration:none;
 }
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover{
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
     color:#3366cc;
     text-decoration:none;
 }
-.footer-links.inline li{
+.footer-links.inline li {
     display:inline-block
 }
-.site-footer .social-icons{
+.site-footer .social-icons {
     text-align:right
 }
-.social-icons a{
+.social-icons a {
     background-color:#eceeef;
     color:#818a91;
     font-size:16px;
@@ -65,21 +64,21 @@
     -o-transition:all .2s linear;
     transition:all .2s linear
 }
-.social-icons.size-sm a{
+.social-icons.size-sm a {
     line-height:34px;
     height:34px;
     width:34px;
     font-size:14px
 }
-.social-icons a.facebook:hover{
+.social-icons a.facebook:hover {
     color:#fff;
     background-color:#3b5998
 }
-.social-icons a.whatsapp:hover{
+.social-icons a.whatsapp:hover {
     color:#fff;
     background-color:#52be80
 }
-.social-icons a.instagram:hover{
+.social-icons a.instagram:hover {
     color:#fff;
     background-color:#af7ac5
 }
@@ -89,16 +88,16 @@
 
 /* index.html */
 /* full width carousel */
-.carousel-item{
+.carousel-item {
     position:relative;
 }
-.carousel-caption{
+.carousel-caption {
     top:60%;
     position:absolute;
     transform:translateY(-50%);
     padding:20px;
 }
-.carousel-inner .carousel-item:before{
+.carousel-inner .carousel-item:before {
     content:"";
     display:block;
     position:absolute;
@@ -109,29 +108,29 @@
     background-color:rgba(0, 0, 0, 0.5);
     z-index:1;
 }
-.carousel-caption{
+.carousel-caption {
     margin:auto;
     padding:auto;
 }
-.carousel-caption h1{
+.carousel-caption h1 {
     font-size:60px;
 }
-.btn-more{
+.btn-more {
     color:#fff;
     border-radius:70px;
     padding:11px 45px;
     font-size:18px;
     border:2px solid #fff;
 }
-.btn-more:hover{
+.btn-more:hover {
     color:#000;
     background-color:#fff;
 }
-.animated{
+.animated {
   -webkit-animation-duration:1.5s;
   animation-duration:1.5s;
 }
-@-webkit-keyframes fadeRight{
+@-webkit-keyframes fadeRight {
   from{
     opacity:0;
     -webkit-transform:translate3d(100px, 0, 0);
@@ -143,18 +142,19 @@
     transform:none;
   }
 }
-.fadeRight{
+.fadeRight {
   -webkit-animation-name:fadeRight;
   animation-name:fadeRight;
 }
 
 /* Our Service section */
-.service-icon{
+.service-icon {
     height:150px;
     width:150px;
 }
- 
-.des-text{
+
+/* Featrued destination section */
+.des-text {
     position:absolute;
     top:50%;
     left:50%;
@@ -162,16 +162,16 @@
     text-align:center;
     color:#fff;
 }
-.tour-card{
+.tour-card {
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
     transition:transform 0.2s;
 }
-.tour-card:hover{
+.tour-card:hover {
     transform:translateY(-5px);
 } 
 
 /* Newsletter section */
-.newsletter{
+.newsletter {
     margin:auto;
 }
 
@@ -179,11 +179,11 @@
 
 
 /* login.html & sign_up.html */
-.user{
+.user {
     display:flex;
     height:100vh;
 }
-.user-box{
+.user-box {
     margin:auto;
 }
 
@@ -191,11 +191,11 @@
 
 
 /* box in tour.html, cruises.html, ground.html, flight.html, 2ToGo.html */
-.box-container{
+.box-container {
     display:flex;
     flex-wrap:wrap;
 }
-.box{
+.box {
     position:relative;
     width:280px;
     height:280px;
@@ -204,7 +204,7 @@
     overflow:hidden;
     transition:.2s ease-in;
 }
-.box .caption{
+.box .caption {
     position:absolute;
     bottom:0;
     left:0;
@@ -212,7 +212,7 @@
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
-.box .view{
+.box .view {
     position:absolute;
     bottom:0;
     left:0;
@@ -221,7 +221,7 @@
     z-index:10;
     transition:opacity 0.3s ease-in-out;
 }
-.box .cover{
+.box .cover {
     position: absolute;
     width:100%;
     height:30%;
@@ -231,14 +231,14 @@
     border-bottom-left-radius:1rem;
     background:linear-gradient(to top, black, transparent);
 }
-.box:hover{
+.box:hover {
     transform: scale(1.1);
 }
-.box:hover .caption{
+.box:hover .caption {
     opacity: 0;
 }
 .box:hover .view,
-.box:hover .cover{
+.box:hover .cover {
     opacity: 1;
 }
 
@@ -246,60 +246,145 @@
 
 
 /* package.html */
-.package-card{
+.package-card {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.package-card-img{
+.package-card-img {
     width: auto;
     height: auto;
 }
-.package-card-title{
+.package-card-title {
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
 }
-.package-card-text{
+.package-card-text {
     margin-bottom: 0.5rem;
 }
-.text-muted{
+.text-muted {
     color: #6c757d;
-}
-
-  
-
-
-/* booking.html */
-.date-menu {
-    width: 100%;
-    overflow-x: auto;
-    border: 2px solid black;
-}
-.date-menu .option{
-    padding: 5px;
-    text-align: center;
-    font-weight: bold;
-    border-right: 0.5px solid #E5E7E9;
-}
-.date-menu .option:hover{
-    background-color: #E5E7E9;
 }
 
 
 
 
 /* package_detail.html */
-.package-image-box{
+.package-image-box {
     border-radius: 20px;
     height: 500px;
 }
-.quantity-input{
+.package-box {
+    border-radius: 20px;
+    background-color: #F2F3F4;
+}
+#seemoreModal .modal-dialog {
+    max-width: 700px;
+    max-height: 400px;
+    position: fixed;
+    transform: translate(60%, 30%);
+}
+.quantity-input {
     border-radius: 20px;
     background-color: #f5f5f5;
 }
 
 
-
 /* booking.html */
-.booking-image-box{
+.booking-image-box {
     border-radius: 20px;
-    height:300px;
+    height:200px;
+}
+.date-menu {
+    width: 100%;
+    overflow-x: auto;
+    border: 2px solid black;
+}
+.date-menu .option {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 0.5px solid #E5E7E9;
+}
+.date-menu .option:hover {
+    background-color: #E5E7E9;
+}
+.booking-box {
+    border-radius: 20px;
+    background-color: #F2F3F4;
+}
+
+
+
+
+/* payment.html */
+.payment-box {
+    border-radius: 20px;
+    background-color: #F2F3F4;
+}
+
+
+
+
+/* Step Lsit for booking and payment.html */
+.FormStepList {
+    display: flex;
+    overflow: hidden;
+    margin-top: 10px;
+    max-width: 60%;
+}
+.FormStepList-item {
+    flex: 1 1 50px;
+    text-align: center;
+    list-style: none;
+}
+.FormStepList-item:before {
+    content: none;
+    display: none;
+}
+.FormStepIcon {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    position: relative;  
+}
+.is-active .FormStepIcon-circle {
+    background: #43B69A;
+    border: 4px solid #8ED3C2;
+    color: #fff;
+}
+.is-passed .FormStepIcon-circle {
+    background: #43B69A;
+    color: #fff;
+}
+.FormStepIcon:after {
+    content: '';
+    background: #D4D4D4;
+    position: absolute;
+    right: -1000%;
+    top: 20px;
+    left: 10px;
+    height: 4px;
+    z-index: 1;  
+}
+.FormStepIcon--last:after {
+    background: #fff;
+}
+.FormStepIcon-circle {
+    background: #D4D4D4;
+    color: #A9A9A9;
+    font-size: 16px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.FormStepIcon-title {
+    width: 50px;
+    display: block;
+    font-size: 0.7em;
+    margin-top: 0.5em;
 }
