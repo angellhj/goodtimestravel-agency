@@ -282,10 +282,30 @@
     position: fixed;
     transform: translate(60%, 30%);
 }
-.quantity-input {
-    border-radius: 20px;
-    background-color: #f5f5f5;
-}
+.form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .btn-outline-secondary {
+    color: #007bff;
+    background-color: transparent;
+    border-color: #007bff;
+  }
+  
+  .btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+.form-control {
+    border-color: #007bff;
+  }
 
 
 /* booking.html */

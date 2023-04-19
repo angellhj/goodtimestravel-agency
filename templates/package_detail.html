@@ -15,9 +15,7 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <!-- <?php include 'navbar.php'; ?> -->
-    <nav class="navbar navbar-expand-lg bg-light p-3 mb-5 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light mb-5 fixed-top">
         <div class="container">
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,11 +43,14 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-4">
-                        <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" height="40" alt="Logo"></a>
+                        <a class="navbar-brand" href="../index.html">
+                            <!-- <img src="../img/logo.png" height="40" alt="Logo"> -->
+                            [logo]
+                        </a>
                     </li>
                     <li class="nav-item m-1">
-                        <a href="templates/login.html" class="btn btn-login btn-secondary btn-light" role="button">
-                            Login
+                        <a href="../templates/login.html" class="btn btn-login btn-secondary" role="button">
+                            LOGIN
                         </a>
                     </li>
                 </ul>
@@ -61,26 +62,36 @@
     <div class="jumbotron jumbotron-fluid mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 border">
+                <div class="col-md-12">
                     <h1 class="display-4">Package name</h1>
                     <p>short description</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-2">
-                    <p>star</p>
+                    <p>
+                        4.7 
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </p>
                 </div>
                 <div class="col-md-2">
-                    <p>booked</p>
+                    <p>500 booked</p>
                 </div>
                 <div class="col-md-4">
-                    <p>destination pin and name</p>
+                    <p><i class="fa fa-map-marker-alt"></i> destination pin and name</p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p><i class="far fa-heart"></i></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Images collage of the destination -->
+    <!-- Images gallery of the destination -->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -90,109 +101,174 @@
     </div>
 
     <!-- Package description -->
-    <div class="container mt-5">
+    <div class="package-box container p-4 mt-5">
         <div class="row">
-            <div class="col-md-12 border">
+            <div class="col-md-12">
                 <h3>Package Details</h3>
                 <ul>
                     <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
                     <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
                     <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
-                    <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
                 </ul>
-                <a href="#"><span>See More....</span></a>
+                <a href="#" data-toggle="modal" data-target="#seemoreModal" class="pl-4 text-dark">
+                    <span>See More....</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- See More Modal -->
+    <div class="modal fade" id="seemoreModal" tabindex="-1" role="dialog" aria-labelledby="seemoreModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="seemoreModalScrollableTitle">Package Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
+                        <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
+                        <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
+                    </ul>
+                    <hr>
+                    <h4>What's included</h4>
+                    <ul>
+                        <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
+                        <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
+                        <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
+                    </ul>
+                    <hr>
+                    <h4>Other Information</h4>
+                    <ul>
+                        <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
+                        <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
+                        <li>At itaque adipisci non quae dolor qui dolorum quos hic quaerat repellat et provident cumque aut ratione blanditiis ex enim recusandae.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Package price and booking -->
-    <div class="container mt-5 border">
+    <div class="package-box container p-4 mt-5">
         <div class="row">
             <div class="col-md-12">
                 <h2>Package price:</h2>
 
                 <!-- select from calendar or scroll menu  -->
                 <h6>Select Date: </h6>
-                <p>[calendar here]</p> 
+                <p>[calendar] or [buttons showing avaialable date]</p> 
 
                 <h6>Quantity: </h6>
-                <label for="adult">Adult:</label>
-                <div class="input-group col-md-2">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-secondary minus-btn" type="button">-</button>
-                    </div>
-                    <input type="text" class="form-control quantity-input" id="adult" value="0">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary plus-btn" type="button">+</button>
-                    </div>
-                </div>
-                <label for="child">Children:</label>
-                <div class="input-group col-md-2">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-secondary minus-btn" type="button">-</button>
-                    </div>
-                    <input type="text" class="form-control quantity-input" id="child" value="0">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary plus-btn" type="button">+</button>
+                <div class="form-group row">
+                    <label for="adult-quantity" class="col-md-10 col-form-label">Adult:</label>
+                    <div class="col-md-2 input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="adult-quantity-minus">-</button>
+                        </div>
+                        <input type="number" class="form-control" id="adult-quantity" name="adult-quantity" value="1">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="adult-quantity-plus">+</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8">
-                <h2>RMxxx</h2>
-            </div>
-            <div class="col-md-2">
-                <a href="../templates/login.html" class="btn btn-login btn-secondary btn-light" role="button">
-                    Add to Cart
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a href="../templates/booking.html" class="btn btn-login btn-secondary btn-light" role="button">
-                    Book Now
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- What to expect -->
-    <div class="container mt-5 border">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>What to expect</h2>
-                <p>[image carousel here]</p>
+                <div class="form-group row">
+                    <label for="child-quantity" class="col-md-10 col-form-label">Children:</label>
+                    <div class="col-md-2 input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="child-quantity-minus">-</button>
+                        </div>
+                        <input type="number" class="form-control" id="child-quantity" name="child-quantity" value="1">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="child-quantity-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9 border">
+                        <h1 class="font-weight-bold">RMxxx</h1>
+                    </div>
+                    <div class="col-md-3 border">
+                        <a href="../templates/login.html" class="btn btn-login btn-secondary btn-light" role="button">
+                            Add to Cart
+                        </a>
+                        <a href="../templates/booking.html" class="btn btn-login btn-secondary btn-light" role="button">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Customer reviews -->
-    <div class="container mt-5 mb-5 border">
+    <div class="package-box container p-4 mt-5 mb-5">
         <div class="row">
             <div class="col-md-12">
                 <h2>Customer Reviews</h2>
             </div>
             <div class="col-md-2">
-                <p>[how many star]</p>
+                <p>
+                    4.7 
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </p>
             </div>
             <div class="col-md-2">
-                <p>[how many review]</p>
+                <p>100 Reviews</p>
             </div>
             <div class="col-md-12">
-                <p>[photo gallery]</p>
+                <!-- <div class="container date-menu mt-5 mb-5">
+                    <div class="row col-md-12 flex-nowrap">
+                        <div class="option col-md-2" data-target="div1">
+                            <p class="date">1</p>
+                            <p class="price">price</p>
+                        </div>
+                        <div class="option col-md-2" data-target="div2">
+                            <p class="date">2</p>
+                            <p class="price">price</p>
+                        </div>
+                        <div class="option col-md-2" data-target="div2">
+                            <p class="date">3</p>
+                            <p class="price">price</p>
+                        </div>
+                        <div class="option col-md-2" data-target="div3">
+                            <p class="date">4</p>
+                            <p class="price">price</p>
+                        </div>
+                        <div class="option col-md-2" data-target="div4">
+                            <p class="date">5</p>
+                            <p class="price">price</p>
+                        </div>
+                        <div class="option col-md-2" data-target="div5">
+                            <p class="date">6</p>
+                            <p class="price">price</p>
+                        </div>
+                        <div class="option col-md-2" data-target="div6">
+                            <p class="date">7</p>
+                            <p class="price">price</p>
+                        </div>
+                        <div class="option col-md-2" data-target="div6">
+                            <p class="date">8</p>
+                            <p class="price">price</p>
+                        </div>
+                    </div>
+                </div> -->
             </div>
             <div class="col-md-12">
                 <p>[categories button display in inline block & dropdown]</p>
+            </div>
+            <div class="col-md-12">
                 <p>[review cards]</p>
             </div>
         </div>
     </div>
-
-    <!-- Recommendations -->
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p>[recommendation here]</p>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Footer -->
     <!-- <?php include 'footer.php'; ?> -->
@@ -253,6 +329,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var adultQuantityInput = document.getElementById('adult-quantity');
+  var adultQuantityMinusBtn = document.getElementById('adult-quantity-minus');
+  var adultQuantityPlusBtn = document.getElementById('adult-quantity-plus');
+
+  adultQuantityMinusBtn.addEventListener('click', function() {
+    var value = parseInt(adultQuantityInput.value, 10);
+    if (value > 1) {
+      adultQuantityInput.value = (value - 1).toString();
+    }
+  });
+
+  adultQuantityPlusBtn.addEventListener('click', function() {
+    var value = parseInt(adultQuantityInput.value, 10);
+    adultQuantityInput.value = (value + 1).toString();
+  });
+    </script>
 
     <!-- Bootstrap JS (optional) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
