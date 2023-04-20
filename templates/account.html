@@ -7,7 +7,7 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/style/main.css">
 
     <!-- Icons  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -17,35 +17,38 @@
 <body>
     <!-- Navbar -->
     <!-- <?php include 'navbar.php'; ?> -->
-    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark p-3 mb-5 fixed-top">
         <div class="container">
+            <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/tour.html">Tours</a>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/tour.html">TOURS</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/cruise.html">CRUISES</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/ground.html">GROUND</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/flight.html">FLIGHT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="templates/cruise.html">Cruises</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/ground.html">Ground</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/flight.html">Flight</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="templates/2_to_go.html">2 To Go</a>
+                        <a class="nav-link" href="../templates/2_to_go.html">2 TO GO</a>
                     </li>
                 </ul>
+
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="../index.html">[LOGO]</a>
+                    <li class="nav-item mr-4">
+                        <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" height="40" alt="Logo"></a>
                     </li>
-                    <li class="nav-item my-1">
-                        <a href="../templates/login.html" class="btn btn-secondary btn-light" role="button">
+                    <li class="nav-item m-1">
+                        <a href="templates/login.html" class="btn btn-login btn-secondary btn-light" role="button">
                             <i class="fas fa-user my-2 my-sm-0"></i> Login
                         </a>
                     </li>
@@ -76,7 +79,7 @@
             <div class="col-md-4">
                 <ul class="list-unstyled">
                     <li>
-                        <img src="../img/profile.png" class = "rounded-circle" alt="profilepic" width="100px" height="100px" />
+                        <img src="../assets/images/profile.png" class = "rounded-circle" alt="profilepic" width="100px" height="100px" />
                     </li>
                     <li>
                         <h2>
@@ -122,68 +125,37 @@
         </div>
     </div>
 
-    <br/><br/>
-
     <!-- Footer -->
     <!-- <?php include 'footer.php'; ?> -->
-    <footer class="footer bg-dark text-white py-5">
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <h4>Connect With Us</h4>
-                    <ul class="list-unstyled">
-                        <li class="d-inline-block">
-                            <a
-                                class="btn btn-lg btn-dark rounded-circle"
-                                style="background-color: #2b52ac;"
-                                href="#!"
-                                role="button"
-                                ><i class="fab fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="d-inline-block">
-                            <a
-                                class="btn btn-lg btn-dark rounded-circle"
-                                style="background-color: #ac2bac;"
-                                href="#!"
-                                role="button">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="d-inline-block">
-                            <a
-                                class="btn btn-lg btn-dark rounded-circle"
-                                style="background-color: #2bac58;"
-                                href="#!"
-                                role="button">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                        </li>
+                <div class="col-md-3 col-xs-6">
+                    <h6>CONNECT WITH US</h6>
+                    <ul class="social-icons list-unstyled ">
+                        <li class="d-inline-block"><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="d-inline-block"><a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="d-inline-block"><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h4>Explore</h4>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a class="footer-link" href="templates/contact_us.html">Contact Us</a>
-                        </li>
-                        <li>
-                            <a class="footer-link" href="templates/about_us.html">About Us</a>
-                        </li>
-                        <li>
-                            <a class="footer-link" href="templates/privacy_policy.html">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a class="footer-link" href="templates/terms_condition.html">Terms and Conditions</a>
-                        </li>
+
+                <div class="col-md-3 col-xs-6">
+                    <h6>EXPLORE</h6>
+                    <ul class="footer-links list-unstyled">
+                        <li><a class="footer-link" href="../templates/contact_us.html">Contact Us</a></li>
+                        <li><a class="footer-link" href="../templates/about_us.html">About Us</a></li>
+                        <li><a class="footer-link" href="../templates/privacy_policy.html">Privacy Policy</a></li>
+                        <li><a class="footer-link" href="../templates/terms_condition.html">Terms and Conditions</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <h4>Address</h4>
+    
+                <div class="col-md-3 col-xs-6">
+                    <h6>ADDRESS</h6>
                     <p>E-G-25, Gala Street Mall,<br>Jalan Tun Jugah,<br>93350 Kuching,<br>Sarawak</p>
                 </div>
-                <div class="col-md-3">
-                    <h4>Office Hours</h4>
+
+                <div class="col-md-3 col-xs-6">
+                    <h6>OFFICE HOURS</h6>
                     <table class="table table-borderless text-white">
                         <tbody>
                             <tr>
@@ -202,10 +174,12 @@
                     </table>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>&copy; 2023 Good Times Travel. All rights reserved.</p>
+            <hr class="bg-light">
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                        <a class="text-white font-weight-bold" href="#">Good Times Travel</a>.
+                    </p>
                 </div>
             </div>
         </div>
