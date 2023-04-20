@@ -66,51 +66,123 @@
 
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-md-4">
-                <ul class="list-unstyled">
-                    <li>
-                        <img src="../assets/images/profile.png" class = "rounded-circle" alt="profilepic" width="100px" height="100px" />
-                    </li>
-                    <li>
-                        <h2>
-                            <strong>User name</strong>
-                        </h2>
-                    </li>
-                    <li>
-                        <p>User email</p>
-                    </li>
-
-                    <br/><br/>
-
-                    <li>
-                        <h5>Personal information</h5>
-                    </li>
-                    <li>
-                        <h5>Billing & Payments</h5>
-                    </li>
-                    <li>
-                        <h5>Bookings</h5>
-                    </li>
-                    <li>
-                        <h5>Preferences</h5>
-                    </li>
-                </ul>
+            <div class="col-md-3">
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li><img src="../assets/images/profile.png" class="rounded-circle" alt="profilepic" width="80px" height="80px" /></li>
+                        <li><h2><strong>Username</strong></h2></li>
+                        <li><p>user@email.com</p></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li><h5>Personal information</h5></li>
+                        <li><h5>Memeber Status</h5></li>
+                        <li><h5>My Bookings</h5></li>
+                        <li><h5>Billing & Payments</h5></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="col-md-8">
-                <ul class="list-unstyled">
-                    <li>
-                        <h2>
-                            <strong>Selected Option</strong>
-                        </h2>
-                    </li>
-                    <li>
-                        <p>Description</p>
-                    </li>
-                    <li>
-                        
-                    </li>
-                </ul>
+            <div class="col-md-9">
+                <div class="row col-md-12">
+                    <h2><strong>Selected Option</strong></h2></li>
+                </div>
+                <div class="row col-md-12 mt-4">
+                    <!-- personal info -->
+                    <div class="container personal-info">
+                        <form method="post" action="#" class="customerinfoform">
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" class="form-control" id="fname" name="fname" required>
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label for="lname">Last Name</label><br>
+                                    <input type="text" class="form-control" id="lname" name="lname" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="email">Password</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label for="email">Comfirm Password</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="ic">Phone number</label><br>
+                                    <input type="text" class="form-control" id="ic" name="ic" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="ic">Date of birth</label><br>
+                                    <input type="text" class="form-control" id="ic" name="ic" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="ic">Gender</label><br>
+                                    <input type="text" class="form-control" id="ic" name="ic" required>
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label for="ic">Nationality</label><br>
+                                    <input type="text" class="form-control" id="ic" name="ic" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="address">Address</label>
+                                    <textarea id="address" class="form-control" id="address" name="address" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="phone">Passport info</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="emergency">Travel document info</label>
+                                    <input type="text" class="form-control" id="emergency" name="emergency" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="emergency">Emergency Contact</label>
+                                    <input type="text" class="form-control" id="emergency" name="emergency" required>
+                                </div>
+                            </div>
+                            <a href="../templates/payment.html" class="btn btn-login btn-secondary btn-light" role="button">
+                                Save Changes
+                            </a>
+                        </form>
+                    </div>
+
+                    <!-- member status -->
+                    <div class="container member-status">
+
+                    </div>
+
+                    <!-- my booking -->
+                    <div class="container my-booking">
+
+                    </div>
+
+                    <!-- billing and payment -->
+                    <div class="container billing-payment">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
