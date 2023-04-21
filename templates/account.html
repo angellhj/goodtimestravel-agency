@@ -70,16 +70,19 @@
                 <div class="row">
                     <ul class="list-unstyled">
                         <li><img src="../assets/images/profile.png" class="rounded-circle" alt="profilepic" width="80px" height="80px" /></li>
-                        <li><h2><strong>Username</strong></h2></li>
+                        <li><h2><strong>Username</strong> <img src="#level-icon" /></h2></li>
                         <li><p>user@email.com</p></li>
                     </ul>
                 </div>
                 <div class="row">
                     <ul class="list-unstyled">
                         <li><h5>Personal information</h5></li>
-                        <li><h5>Member Status</h5></li>
+                        <li><h5>Booking History</h5></li>
                         <li><h5>My Bookings</h5></li>
-                        <li><h5>Billing & Payments</h5></li>
+                        <li><h5>Payment Method</h5></li>
+                        <li><h5>Reviews and Ratings</h5></li>
+                        <li><h5>Wishlist</h5></li>
+                        <li><h5>Settings</h5></li>
                     </ul>
                 </div>
             </div>
@@ -88,9 +91,9 @@
                 <div class="row col-md-12">
                     <h2><strong>Selected Option</strong></h2></li>
                 </div>
-                <div class="row col-md-12 mt-4">
+                <div class="row col-md-12 mt-2">
                     <!-- personal info -->
-                    <div class="personal-info container bg-light">
+                    <!-- <div class="personal-info container p-4 bg-light">
                         <form method="post" action="#" class="customerinfoform">
                             <div class="form-row">
                                 <div class="form-group col-md-5">
@@ -110,34 +113,34 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-5">
-                                    <label for="email">Password</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
                                 </div>
                                 <div class="form-group col-md-5">
-                                    <label for="email">Comfirm Password</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-5">
-                                    <label for="ic">Phone number</label><br>
-                                    <input type="text" class="form-control" id="ic" name="ic" required>
+                                    <label for="cpassword">Comfirm Password</label>
+                                    <input type="cpassword" class="form-control" id="cpassword" name="cpassword" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-5">
-                                    <label for="ic">Date of birth</label><br>
-                                    <input type="text" class="form-control" id="ic" name="ic" required>
+                                    <label for="iphonenum">Phone number</label><br>
+                                    <input type="text" class="form-control" id="phonenum" name="phonenum" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-5">
-                                    <label for="ic">Gender</label><br>
-                                    <input type="text" class="form-control" id="ic" name="ic" required>
+                                    <label for="dob">Date of birth</label><br>
+                                    <input type="text" class="form-control" id="dob" name="dob" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="gender">Gender</label><br>
+                                    <input type="text" class="form-control" id="gender" name="gender" required>
                                 </div>
                                 <div class="form-group col-md-5">
-                                    <label for="ic">Nationality</label><br>
-                                    <input type="text" class="form-control" id="ic" name="ic" required>
+                                    <label for="nation">Nationality</label><br>
+                                    <input type="text" class="form-control" id="nation" name="nation" required>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -148,12 +151,12 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="phone">Passport info</label>
-                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                    <label for="passport">Passport info</label>
+                                    <input type="tel" class="form-control" id="passport" name="passport" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="emergency">Travel document info</label>
-                                    <input type="text" class="form-control" id="emergency" name="emergency" required>
+                                    <label for="traveldoc">Travel document info</label>
+                                    <input type="text" class="form-control" id="traveldoc" name="traveldoc" required>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -164,26 +167,341 @@
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">
-                                    <button type="submit" class="btn btn-secondary btn-light">Save Changes</button>
+                                    <button type="submit" class="btn btn-secondary btn-dark">Save Changes</button>
                                 </div>
                             </div>
                         </form>
-                    </div>
 
-                    <!-- member status -->
-                    <div class="container member-status">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">Delete Account?</button>
+                        </div>
+                    </div> -->
 
-                    </div>
+                    <!-- booking history -->
+                    <!-- <div class="booking-history container p-4 bg-light">
+                        <div class="history-box row d-flex align-items-center mb-4 p-3">
+                            <div class="col-md-4">
+                                <img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Name</h4>
+                                <span>details</span>
+                                <h5>price</h5>
+                            </div>
+                        </div>    
+                    </div> -->
 
-                    <!-- my booking -->
-                    <div class="container my-booking">
+                     <!-- my booking -->
+                    <!-- <div class="my-booking container bg-light">
+                        <div class="p-4" id="accordion">
+                            <div class="card">
+                                <a class="card-link" data-toggle="collapse" href="#collapseBooking">
+                                    <div class="card-header">
+                                        <h5>Booked Trips</h5>
+                                    </div>
+                                </a>
+                                <div id="collapseBooking" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="booked-box row d-flex align-items-center mb-4 p-3">
+                                            <div class="col-md-4">
+                                                <img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h4>Name</h4>
+                                                <span>details</span>
+                                                <h5>price</h5>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button type="submit" class="btn btn-secondary btn-dark">Cancel</button>
+                                            </div>
+                                        </div>
+                                        <div class="booked-box row d-flex align-items-center mb-4 p-3">
+                                            <div class="col-md-4">
+                                                <img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h4>Name</h4>
+                                                <span>details</span>
+                                                <h5>price</h5>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button type="submit" class="btn btn-secondary btn-dark">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a class="card-link" data-toggle="collapse" href="#collapseUpcoming">
+                                    <div class="card-header">
+                                        <h5>Upcoming Trips</h5>
+                                    </div>
+                                </a>
+                                <div id="collapseUpcoming" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="upcoming-box row d-flex align-items-center mb-4 p-3">
+                                            <div class="col-md-4">
+                                                <img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h4>Name</h4>
+                                                <span>details</span>
+                                                <h5>price</h5>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button type="submit" class="btn btn-secondary btn-dark">Cancel</button>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a class="card-link" data-toggle="collapse" href="#collapseCancelled">
+                                    <div class="card-header">
+                                        <h5>Cancelled Trips</h5>
+                                    </div>
+                                </a>
+                                <div id="collapseCancelled" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="cancelled-box row mb-4 p-3">
+                                            <div class="col-md-4">
+                                                <img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h4>Name</h4>
+                                                <span>details</span>
+                                                <h5>price</h5>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
 
-                    </div>
+                    <!-- payment method -->
+                    <!-- <div class="payment-method container bg-light">
+                        <div class="p-4" id="accordion">
+                            <div class="card">
+                                <a class="card-link" data-toggle="collapse" href="#collapseBooking">
+                                    <div class="card-header">
+                                        <h5>Credit / Debit Card</h5>
+                                    </div>
+                                </a>
+                                <div id="collapseBooking" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="booked-box row d-flex align-items-center mb-4 p-3">
+                                            <div class="col-md-4">
+                                                <p>[icon of card]</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>card name</p>
+                                                <p>card number</p>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button type="submit" class="btn btn-secondary btn-dark">Remove</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a class="card-link" data-toggle="collapse" href="#collapseUpcoming">
+                                    <div class="card-header">
+                                        <h5>Bank Transfer</h5>
+                                    </div>
+                                </a>
+                                <div id="collapseUpcoming" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="upcoming-box row d-flex align-items-center mb-4 p-3">
+                                            <div class="col-md-4">
+                                                <p>[icon of the bank]</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>bank name</p>
+                                                <p>account name</p>
+                                                <p>account number</p>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button type="submit" class="btn btn-secondary btn-dark">Remove</button>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
 
-                    <!-- billing and payment -->
-                    <div class="container billing-payment">
+                    <!-- review and rating -->
+                    <!-- Button trigger modal -->
+                    <!-- <div class="review-rating container p-4 bg-light">
+                        <div class="review-box row d-flex align-items-center mb-4 p-3">
+                            <div class="col-md-4">
+                                <img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Name</h4>
+                                <span>details</span>
+                                <h5>price</h5>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-secondary btn-dark" data-toggle="modal" data-target="#reviewModal">Rate</button>
+                            </div>
+                        </div>
+                        <div class="review-box row d-flex align-items-center mb-4 p-3">
+                            <div class="col-md-4">
+                                <img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Name</h4>
+                                <span>details</span>
+                                <h5>price</h5>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-primary btn-dark" data-toggle="modal" data-target="#reviewModal">Rate</button>
+                            </div>
+                        </div>  
+                    </div> -->
+                    <!-- review and rating modal -->
+                    <!-- <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="reviewModalLabel">Review & Rating</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="rating">Rating</label>
+                                            <select class="form-control" id="rating">
+                                            <option value="5">5 Stars</option>
+                                            <option value="4">4 Stars</option>
+                                            <option value="3">3 Stars</option>
+                                            <option value="2">2 Stars</option>
+                                            <option value="1">1 Star</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="review">Review</label>
+                                            <textarea class="form-control" id="review" rows="3"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer text-center">
+                                    <button type="submit" class="btn btn-primary mx-auto" data-toggle="modal" data-miss="modal">Submit Review</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
 
-                    </div>
+                    <!-- wishlist -->
+                    <!-- <div class="wishlist container p-4 bg-light">
+                        <div class="wish-box row d-flex align-items-center mb-4 p-3">
+                            <div class="col-md-4">
+                                <img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Name</h4>
+                                <span>details</span>
+                                <h5>price</h5>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-secondary btn-dark">Remove</button>
+                            </div>
+                        </div>
+                        <div class="wish-box row d-flex align-items-center mb-4 p-3">
+                            <div class="col-md-4">
+                                <img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Name</h4>
+                                <span>details</span>
+                                <h5>price</h5>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-secondary btn-dark">Remove</button>
+                            </div>
+                        </div>
+                        <div class="wish-box row d-flex align-items-center mb-4 p-3">
+                            <div class="col-md-4">
+                                <img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Name</h4>
+                                <span>details</span>
+                                <h5>price</h5>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-secondary btn-dark">Remove</button>
+                            </div>
+                        </div>   
+                    </div> -->
+
+                    <!-- settings -->
+                    <!-- <div class="settings container p-4 bg-light">
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <h3>Updates and Promotion</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="updateSwitch1">
+                                    <label class="custom-control-label" for="updateSwitch1">SMS Notification</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="updateSwitch2">
+                                    <label class="custom-control-label" for="updateSwitch2">Email Notification</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <h3>Reminders</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="reminderSwitch1">
+                                    <label class="custom-control-label" for="reminderSwitch1">SMS Notification</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="reminderSwitch2">
+                                    <label class="custom-control-label" for="reminderSwitch2">Email Notification</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <h3>Account Notifications</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="accountSwitch1">
+                                    <label class="custom-control-label" for="accountSwitch1">SMS Notification</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="accountSwitch2">
+                                    <label class="custom-control-label" for="accountSwitch2">Email Notification</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary">Update</button>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>

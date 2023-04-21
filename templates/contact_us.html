@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/style/main.css">
+
+    <!-- Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- <?php include 'navbar.php'; ?> -->
+    <nav class="navbar navbar-expand-lg bg-dark p-3 mb-5 fixed-top">
+        <div class="container">
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/tour.html">TOURS</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/cruise.html">CRUISES</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/ground.html">GROUND</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="../templates/flight.html">FLIGHT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../templates/2_to_go.html">2 TO GO</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-4">
+                        <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png" height="40" alt="Logo"></a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="templates/login.html" class="btn btn-login btn-secondary btn-light" role="button">
+                            <i class="fas fa-user my-2 my-sm-0"></i> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- contact us box -->
+    <div class="container pt-5 mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-6 p-4 border">
+                <h2>Contact Us</h2>
+                <div class="contact-box mt-5">
+                    <p>
+                        【联系我们】报名吧🤪 <br>
+                        ☎082-265822 <br>
+                        📲WhatsApp📲 <br>
+                        👧 Kuching | wa.me/60128855226 ｜Cynthia 小妹 <br>
+                        👧 Kuching | wa.me/60128851622 ｜古晋 <br>
+                        👱‍♀️ Kuching | wa.me/60128224822 ｜古晋 <br>
+                        👩 Miri | wa.me/60143381622 | 美里 <br>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 p-4 border">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- <?php include 'footer.php'; ?> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <h6>CONNECT WITH US</h6>
+                    <ul class="social-icons list-unstyled ">
+                        <li class="d-inline-block"><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="d-inline-block"><a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="d-inline-block"><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <h6>EXPLORE</h6>
+                    <ul class="footer-links list-unstyled">
+                        <li><a class="footer-link" href="../templates/contact_us.html">Contact Us</a></li>
+                        <li><a class="footer-link" href="../templates/about_us.html">About Us</a></li>
+                        <li><a class="footer-link" href="../templates/privacy_policy.html">Privacy Policy</a></li>
+                        <li><a class="footer-link" href="../templates/terms_condition.html">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3 col-xs-6">
+                    <h6>ADDRESS</h6>
+                    <p>E-G-25, Gala Street Mall,<br>Jalan Tun Jugah,<br>93350 Kuching,<br>Sarawak</p>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <h6>OFFICE HOURS</h6>
+                    <table class="table table-borderless text-white">
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday:</td>
+                                <td>9:00 AM - 5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday:</td>
+                                <td>10:00 AM - 2:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+                        <a class="text-white font-weight-bold" href="#">Good Times Travel</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHJewRx" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
