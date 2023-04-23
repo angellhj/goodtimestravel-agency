@@ -14,14 +14,14 @@ app.controller('LoginController', function($scope) {
 		}
 	};
 
-	$scope.forgotPasswordForm = function() {
-		// Add your forgot password logic here
-		if ($scope.email !== 'example@example.com') {
-			$scope.error = 'Email address not found.';
-			return;
-		}
-		alert('An email has been sent with instructions to reset your password.');
-	};
+	// $scope.forgotPasswordForm = function() {
+	// 	// Add your forgot password logic here
+	// 	if ($scope.email !== 'example@example.com') {
+	// 		$scope.error = 'Email address not found.';
+	// 		return;
+	// 	}
+	// 	alert('An email has been sent with instructions to reset your password.');
+	// };
 });
 
 // app.controller('ForgotPasswordController', function($scope) {
