@@ -1,14 +1,14 @@
 var app = angular.module("myApp", []);
     
-app.controller("tabController", function($scope) {
+app.controller("TabController", function($scope) {
     $scope.tab = 'personal-info';
-    $scope.activeTab = 'tab1';
+    $scope.activeTab = 'personal-info';
     $scope.setActiveTab = function(tab) {
         $scope.activeTab = tab;
     };
 });
 
-app.controller('formController', function($scope) {
+app.controller('PersonalInfoFormController', function($scope) {
     // testing user data
     $scope.user = {
         fname: 'John',

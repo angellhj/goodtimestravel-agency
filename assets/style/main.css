@@ -181,10 +181,13 @@
 /* login.html & sign_up.html */
 .user {
     display:flex;
-    height:100vh;
+    height:700px;
 }
 .user-box {
     margin:auto;
+}
+.error {
+	color: red;
 }
 
 
@@ -282,10 +285,10 @@
     position: fixed;
     transform: translate(60%, 30%);
 }
-.form-group {
+.package-box .form-group {
     margin-bottom: 1rem;
 }
-.input-group {
+.package-box .input-group {
     width: 100%;
     max-width: 300px;
 }
@@ -299,7 +302,7 @@
     background-color: #007bff;
     border-color: #007bff;
 }
-.form-control {
+.package-box .form-control {
     border-color: #007bff;
 }
 
