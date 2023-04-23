@@ -64,7 +64,7 @@
         </div>
     </div>
 
-    <div class="container mt-5 mb-5" ng-controller="accountTab">
+    <div class="container mt-5 mb-5" ng-controller="tabController">
         <div class="row">
             <!-- Side Menubar -->
             <div class="col-md-3">
@@ -75,76 +75,78 @@
                         <li><p>user@email.com</p></li>
                     </ul>
                 </div>
-				<div class="row">
-					<ul class="list-unstyled">
-						<li><a href="#" ng-click="tab='personal-info'"><h5>Personal info</h5></a></li>
-						<li><a href="#" ng-click="tab='book-hist'"><h5>Booking History</h5></a></li>
-						<li><a href="#" ng-click="tab='my-book'"><h5>My Booking</h5></a></li>
-						<li><a href="#" ng-click="tab='wish'"><h5>Wishlist</h5></a></li>
-						<li><a href="#" ng-click="tab='payment'"><h5>Payment Method</h5></a></li>
-						<li><a href="#" ng-click="tab='rating'"><h5>Reveiws & Ratings</h5></a></li>
-						<li><a href="#" ng-click="tab='noti'"><h5>Notification Setting</h5></a></li>
-					</ul>
+				<div class="side-menu p-2 row">
+					<div class="col-md-12 border">
+						<ul class="list-unstyled">
+							<li class="tab active"><a href="#" ng-click="tab='personal-info'"><h5>Personal info</h5></a></li>
+							<li class="tab"><a href="#" ng-click="tab='book-hist'"><h5>Booking History</h5></a></li>
+							<li class="tab"><a href="#" ng-click="tab='my-book'"><h5>My Booking</h5></a></li>
+							<li class="tab"><a href="#" ng-click="tab='wish'"><h5>Wishlist</h5></a></li>
+							<li class="tab"><a href="#" ng-click="tab='payment'"><h5>Payment Method</h5></a></li>
+							<li class="tab"><a href="#" ng-click="tab='rating'"><h5>Reveiws & Ratings</h5></a></li>
+							<li class="tab"><a href="#" ng-click="tab='noti'"><h5>Notification Setting</h5></a></li>
+						</ul>
+					</div>
 				</div>
             </div>
 
             <!-- Tabs -->
             <div class="col-md-9">
-				<div class="container p-4 bg-light" ng-show="tab=='personal-info'">
+				<div class="container p-4 bg-light" ng-controller="formController" ng-show="tab=='personal-info'">
 					<h2><strong>Personal Information</strong></h2>
-                    <form method="post" action="#" class="customerinfoform">
+                    <form name="personalinfoform" ng-submit="submitForm()">
 						<div class="form-row">
-							<div class="form-group col-md-5">
+							<div class="form-group col-md-6">
 								<label for="fname">First Name</label>
-								<input type="text" class="form-control" id="fname" name="fname" required>
+								<input type="text" class="form-control" id="fname" name="fname" ng-model="user.fname" required>
 							</div>
-							<div class="form-group col-md-5">
+							<div class="form-group col-md-6">
 								<label for="lname">Last Name</label><br>
-								<input type="text" class="form-control" id="lname" name="lname" required>
+								<input type="text" class="form-control" id="lname" name="lname" ng-model="user.lname" required>
 							</div>
 						</div>
 						<div class="form-row">
-							<div class="form-group col-md-5">
+							<div class="form-group col-md-6">
 								<label for="email">Email</label>
-								<input type="email" class="form-control" id="email" name="email" required>
+								<input type="email" class="form-control" id="email" name="email" ng-model="user.email" required>
 							</div>
 						</div>
 						<div class="form-row">
-							<div class="form-group col-md-5">
+							<div class="form-group col-md-6">
 								<label for="password">Password</label>
 								<input type="password" class="form-control" id="password" name="password" required>
 							</div>
-							<div class="form-group col-md-5">
+							<div class="form-group col-md-6">
 								<label for="cpassword">Comfirm Password</label>
 								<input type="cpassword" class="form-control" id="cpassword" name="cpassword" required>
 							</div>
 						</div>
 						<div class="form-row">
-							<div class="form-group col-md-5">
+							<div class="form-group col-md-6">
 								<label for="iphonenum">Phone number</label><br>
-								<input type="text" class="form-control" id="phonenum" name="phonenum" required>
+								<input type="text" class="form-control" id="phonenum" name="phonenum" ng-model="user.phonenum" required>
 							</div>
 						</div>
 						<div class="form-row">
-							<div class="form-group col-md-5">
+							<div class="form-group col-md-6">
 								<label for="dob">Date of birth</label><br>
-								<input type="text" class="form-control" id="dob" name="dob" required>
+								<input type="text" class="form-control" id="dob" name="dob" ng-model="user.dob" required>
 							</div>
 						</div>
 						<div class="form-row">
-							<div class="form-group col-md-5">
+							<div class="form-group col-md-6">
 								<label for="gender">Gender</label><br>
-								<input type="text" class="form-control" id="gender" name="gender" required>
+								<input type="text" class="form-control" id="gender" name="gender" ng-model="user.gender" required>
 							</div>
-							<div class="form-group col-md-5">
-								<label for="nation">Nationality</label><br>
-								<input type="text" class="form-control" id="nation" name="nation" required>
+							<div class="form-group col-md-6">
+								<label for="nationality">Nationality</label><br>
+								<input type="text" class="form-control" id="nationality" name="nationality" ng-model="user.nationality" required>
 							</div>
 						</div>
 						<div class="form-row">
-							<div class="form-group col-md-5">
+							<div class="form-group col-md-6">
 								<label for="address">Address</label>
-								<textarea id="address" class="form-control" id="address" name="address" required></textarea>
+								<textarea id="address" class="form-control" id="address" name="address" ng-model="user.address" required></textarea>
 							</div>
 						</div>
 						<div class="form-row">
@@ -153,28 +155,28 @@
 								<input type="tel" class="form-control" id="passport" name="passport" required>
 							</div>
 							<div class="form-group col-md-6">
-								<label for="traveldoc">Travel document info</label>
-								<input type="text" class="form-control" id="traveldoc" name="traveldoc" required>
+								<label for="traveldoc">Travel document</label>
+    							<input type="file" ngf-select ng-model="file" name="file" id="file" class="form-control-file">
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-6">
 								<label for="emergency">Emergency Contact</label>
-								<input type="text" class="form-control" id="emergency" name="emergency" required>
+								<input type="text" class="form-control" id="emergency" name="emergency" ng-model="user.emergency" required>
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-12">
-								<button type="submit" class="btn btn-secondary btn-dark">Save Changes</button>
-								<!-- <button type="submit" class="btn btn-primary">Delete Account?</button> -->
+								<button class="btn btn-secondary btn-dark" ng-click="updatePersonalInfo()">Save Changes</button>
 							</div>
 						</div>
 					</form>
 					<div>
-						<button type="submit" class="btn btn-primary">Delete Account?</button>
+						<button type="submit" class="btn btn-secondary btn-dark">Delete Account?</button>
 					</div>
 				</div>
 
+				<!-- Booking History Tab -->
 				<div class="container p-4 bg-light" ng-show="tab=='book-hist'">
 					<h2><strong>Booking History</strong></h2>
 					<div class="history-box row d-flex align-items-center mb-4 p-3">
@@ -189,6 +191,7 @@
 					</div>
 				</div>
 
+				<!-- My Booking Tab -->
 				<div class="container p-4 bg-light" ng-show="tab=='my-book'">
 					<h2><strong>My Booking</strong></h2>
 					<div class="p-4" id="accordion">
@@ -279,6 +282,7 @@
 					</div>
 				</div>
 
+				<!-- Wishlist Tab -->
 				<div class="container p-4 bg-light" ng-show="tab=='wish'">
 					<h2><strong>Wishlist</strong></h2>
 					<div class="wish-box row d-flex align-items-center mb-4 p-3">
@@ -322,6 +326,7 @@
 					</div>
 				</div>
 
+				<!-- Payment Method Tab -->
 				<div class="container p-4 bg-light" ng-show="tab=='payment'">
 					<h2><strong>Payment Method</strong></h2>
 					<div class="p-4" id="accordion">
@@ -376,6 +381,7 @@
 					</div>
 				</div>
 
+				<!-- Review & Rating Tab -->
 				<div class="container p-4 bg-light" ng-show="tab=='rating'">
 					<h2><strong>Reveiw & Rating</strong></h2>
 					<div class="review-box row d-flex align-items-center mb-4 p-3">
@@ -441,6 +447,7 @@
                     </div>
 				</div>
 
+				<!-- Notification Setting Tab -->
 				<div class="container p-4 bg-light" ng-show="tab=='noti'">
 					<h2><strong>Notification Setting</strong></h2>
 					<div class="row mb-4">
@@ -564,12 +571,15 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS  -->
+	<!-- Angular JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-file-upload/2.5.0/angular-file-upload.min.js"></script>
+	<!-- Bootstrap JS  -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHJewRx" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+	<!-- JS Script -->
     <script src="../script/account.js"></script>
+
 </body>
 </html>

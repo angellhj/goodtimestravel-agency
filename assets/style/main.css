@@ -284,28 +284,26 @@
 }
 .form-group {
     margin-bottom: 1rem;
-  }
-  
-  .input-group {
+}
+.input-group {
     width: 100%;
     max-width: 300px;
-  }
-  
-  .btn-outline-secondary {
+}
+.btn-outline-secondary {
     color: #007bff;
     background-color: transparent;
     border-color: #007bff;
-  }
-  
-  .btn-outline-secondary:hover {
+}
+.btn-outline-secondary:hover {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
-  }
-  
+}
 .form-control {
     border-color: #007bff;
-  }
+}
+
+
 
 
 /* booking.html */
@@ -344,7 +342,7 @@
 
 
 
-/* Step Lsit for booking and payment.html */
+/* Step List for booking and payment.html */
 .FormStepList {
     display: flex;
     overflow: hidden;
@@ -407,4 +405,26 @@
     display: block;
     font-size: 0.7em;
     margin-top: 0.5em;
+}
+
+
+
+/* account.html */
+.side-menu {
+    background-color: #E5E7E9;
+    border-radius: 20px;
+}
+
+.side-menu li{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.side-menu li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.side-menu li:hover {
+    background-color: #fff;
 }
