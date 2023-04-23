@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="myApp">
+<html lang="en" ng-app="myApp">
 
 <head>
     <meta charset="UTF-8">
@@ -16,97 +16,82 @@
 
 <body class="user">
     <div class="container user-box">
-        <div class="row justify-content-center" ng-controller="LoginController">
-            <div class="col-md-4 rounded shadow">
-                <div class="row pt-3">
-                    <div class="col-md-12">
-                        <h2>Login</h2>
-                    </div>
-                </div>
-
+        <div class="row justify-content-center">
+            <div class="col-md-4 p-3 shadow" ng-controller="loginCtrl">
+                <h2>Login</h2>
                 <hr/>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <form name="loginForm" ng-submit="submitForm()">
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" name="username" id="username" placeholder="Username" ng-model="username" ng-pattern="/^[a-zA-Z0-9]*$/">
-                                        <!-- error message -->
-                                        <span ng-show="loginForm.username.$error.required">Username is required.</span>
-			                            <span ng-show="loginForm.username.$error.pattern">Username should contain only letters and numbers.</span>
-                                    </div>
+                <form name="loginForm" ng-submit="login()">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
                                 </div>
+                                <input type="text" class="form-control" name="username" id="username" placeholder="Username" ng-model="username" ng-pattern="/^[a-zA-Z0-9]*$/" required>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                                        </div>
-                                        <input type="password" class="form-control" name="password" id="password" placeholder="Password" ng-model="password">
-                                        <!-- error message -->
-                                        <span ng-show="loginForm.password.$error.required">Password is required.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12 text-right">
-                                    <a href="#" data-toggle="modal" data-target="#forgotModal" class="text-dark">
-                                        Forgot Password?
-                                    </a>
-
-                                    <!-- Forgot password Modal -->
-                                    <div class="modal" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="forgotModalLabel">Forgot Password</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form name="forgotPasswordForm" ng-submit="forgotPasswordForm()">
-                                                        <div class="form-group">
-                                                            <label for="inputEmail">Email address</label>
-                                                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Registered email">
-                                                            <!-- error message -->
-                                                            <span ng-show="forgotPasswordForm.email.$error.required">Email is required.</span>
-                                                            <span ng-show="forgotPasswordForm.email.$error.email">Invalid email address.</span>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div class="modal-footer text-center">
-                                                    <button type="submit" class="btn btn-primary mx-auto" data-toggle="modal" data-miss="modal">Send Email</button>
-                                                    <span ng-show="error" class="error">{{error}}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row justify-content-center">
-                                <div class="form-group col-md-6">
-                                    <button type="submit" class="btn btn-primary btn-block login-btn">Login</button>
-                                </div>
-                                <span ng-show="error" class="error">{{error}}</span>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12 text-center">
-                                    <p>New Member? 
-                                        <a href="sign_up.html" class="text-primary font-weight-bold">
-                                            Sign Up
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </form>
+                            <!-- error message -->
+                            <span ng-show="loginForm.username.$error.required">Username is required.</span>
+                            <span ng-show="loginForm.username.$error.pattern">Username should contain only letters and numbers.</span>
+                        </div>
                     </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                </div>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Password" ng-model="password" required>
+                            </div>
+                        </div>
+                        <!-- error message -->
+                        <span ng-show="loginForm.password.$error.required">Password is required.</span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12 text-right">
+                            <a href="#" data-toggle="modal" data-target="#forgotModal" class="text-dark text-right">
+                                Forgot Password?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center mt-3">
+                        <div class="form-group col-md-6">
+                            <button type="submit" class="btn btn-primary btn-block login-btn">Login</button>
+                        </div>
+                        <span ng-show="error" class="error">{{error}}</span>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12 text-center">
+                            <p>New Member? <a href="sign_up.html" class="text-primary font-weight-bold">Sign Up</a></p>
+                        </div>
+                    </div>
+                </form>     
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot password Modal -->
+    <div class="modal" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="forgotModalLabel">Forgot Password</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form name="forgotPasswordForm" ng-submit="forgotPassword()">
+                        <div class="form-group">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Registered email">
+                            <!-- error message -->
+                            <span ng-show="forgotPasswordForm.email.$error.required">Email is required.</span>
+                            <span ng-show="forgotPasswordForm.email.$error.email">Invalid email address.</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="submit" class="btn btn-primary mx-auto" data-toggle="modal" data-miss="modal">Send Email</button>
                 </div>
             </div>
         </div>
@@ -114,7 +99,6 @@
 
     <!-- Angular JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-file-upload/2.5.0/angular-file-upload.min.js"></script>
     <!-- Bootstrap JS  -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHJewRx" crossorigin="anonymous"></script>

@@ -185,6 +185,7 @@
 }
 .user-box {
     margin:auto;
+    border-radius: 20px;
 }
 .error {
 	color: red;
