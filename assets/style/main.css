@@ -410,21 +410,34 @@
 
 
 /* account.html */
-.side-menu {
-    background-color: #E5E7E9;
+.sidebar {
+    background-color: #f2f2f2;
     border-radius: 20px;
+    padding: 20px;
 }
-
-.side-menu li{
-    border-radius: 20px;
+.sidebar li {
     padding: 10px;
 }
-
-.side-menu li a {
+.sidebar li:hover {
+    background-color: #fff;
+    border-radius: 20px;
+}
+.sidebar li h5 {
     color: #000;
-    text-decoration: none;
+    cursor: pointer;
+}
+.sidebar .active h5 {
+    color: #F1C40F;
 }
 
-.side-menu li:hover {
-    background-color: #fff;
+.personal-info,
+.book-hist,
+.my-book,
+.wish-list,
+.payment-method,
+.review-rate,
+.noti-setting {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 20px;
 }

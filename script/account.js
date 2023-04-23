@@ -2,7 +2,7 @@ var app = angular.module("myApp", []);
     
 app.controller("tabController", function($scope) {
     $scope.tab = 'personal-info';
-
+    $scope.activeTab = 'tab1';
     $scope.setActiveTab = function(tab) {
         $scope.activeTab = tab;
     };

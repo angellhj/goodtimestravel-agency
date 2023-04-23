@@ -75,16 +75,30 @@
                         <li><p>user@email.com</p></li>
                     </ul>
                 </div>
-				<div class="side-menu p-2 row">
-					<div class="col-md-12 border">
+				<div class="row">
+					<div class="sidebar col-md-12">
 						<ul class="list-unstyled">
-							<li class="tab active"><a href="#" ng-click="tab='personal-info'"><h5>Personal info</h5></a></li>
-							<li class="tab"><a href="#" ng-click="tab='book-hist'"><h5>Booking History</h5></a></li>
-							<li class="tab"><a href="#" ng-click="tab='my-book'"><h5>My Booking</h5></a></li>
-							<li class="tab"><a href="#" ng-click="tab='wish'"><h5>Wishlist</h5></a></li>
-							<li class="tab"><a href="#" ng-click="tab='payment'"><h5>Payment Method</h5></a></li>
-							<li class="tab"><a href="#" ng-click="tab='rating'"><h5>Reveiws & Ratings</h5></a></li>
-							<li class="tab"><a href="#" ng-click="tab='noti'"><h5>Notification Setting</h5></a></li>
+							<li ng-class="{active: activeTab=='personal-info'}" ng-click="setActiveTab('personal-info')">
+								<h5 ng-click="tab='personal-info'">Personal info</h5>
+							</li>
+							<li ng-class="{active: activeTab=='book-hist'}" ng-click="setActiveTab('book-hist')">
+								<h5 ng-click="tab='book-hist'">Booking History</h5>
+							</li>
+							<li ng-class="{active: activeTab=='my-book'}" ng-click="setActiveTab('my-book')">
+								<h5 ng-click="tab='my-book'">My Booking</h5>
+							</li>
+							<li ng-class="{active: activeTab=='wish'}" ng-click="setActiveTab('wish')">
+								<h5 ng-click="tab='wish'">Wishlist</h5>
+							</li>
+							<li ng-class="{active: activeTab=='payment'}" ng-click="setActiveTab('payment')">
+								<h5 ng-click="tab='payment'">Payment Method</h5>
+							</li>
+							<li ng-class="{active: activeTab=='rating'}" ng-click="setActiveTab('rating')">
+								<h5 ng-click="tab='rating'">Reveiws & Ratings</h5>
+							</li>
+							<li ng-class="{active: activeTab=='noti'}" ng-click="setActiveTab('noti')">
+								<h5 ng-click="tab='noti'">Notification Setting</h5>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -92,8 +106,8 @@
 
             <!-- Tabs -->
             <div class="col-md-9">
-				<div class="container p-4 bg-light" ng-controller="formController" ng-show="tab=='personal-info'">
-					<h2><strong>Personal Information</strong></h2>
+				<div class="personal-info container" ng-controller="formController" ng-show="tab=='personal-info'">
+					<h2 class="mb-5"><strong>Personal Information</strong></h2>
                     <form name="personalinfoform" ng-submit="submitForm()">
 						<div class="form-row">
 							<div class="form-group col-md-6">
@@ -177,8 +191,8 @@
 				</div>
 
 				<!-- Booking History Tab -->
-				<div class="container p-4 bg-light" ng-show="tab=='book-hist'">
-					<h2><strong>Booking History</strong></h2>
+				<div class="book-hist container" ng-show="tab=='book-hist'">
+					<h2 class="mb-5"><strong>Booking History</strong></h2>
 					<div class="history-box row d-flex align-items-center mb-4 p-3">
 						<div class="col-md-4">
 							<img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
@@ -192,8 +206,8 @@
 				</div>
 
 				<!-- My Booking Tab -->
-				<div class="container p-4 bg-light" ng-show="tab=='my-book'">
-					<h2><strong>My Booking</strong></h2>
+				<div class="my-book container" ng-show="tab=='my-book'">
+					<h2 class="mb-5"><strong>My Booking</strong></h2>
 					<div class="p-4" id="accordion">
 						<div class="card">
 							<a class="card-link" data-toggle="collapse" href="#collapseBooking">
@@ -283,8 +297,8 @@
 				</div>
 
 				<!-- Wishlist Tab -->
-				<div class="container p-4 bg-light" ng-show="tab=='wish'">
-					<h2><strong>Wishlist</strong></h2>
+				<div class="wish-list container" ng-show="tab=='wish'">
+					<h2 class="mb-5"><strong>Wishlist</strong></h2>
 					<div class="wish-box row d-flex align-items-center mb-4 p-3">
 						<div class="col-md-4">
 							<img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
@@ -327,8 +341,8 @@
 				</div>
 
 				<!-- Payment Method Tab -->
-				<div class="container p-4 bg-light" ng-show="tab=='payment'">
-					<h2><strong>Payment Method</strong></h2>
+				<div class="payment-method container" ng-show="tab=='payment'">
+					<h2 class="mb-5"><strong>Payment Method</strong></h2>
 					<div class="p-4" id="accordion">
 						<div class="card">
 							<a class="card-link" data-toggle="collapse" href="#collapseBooking">
@@ -382,8 +396,8 @@
 				</div>
 
 				<!-- Review & Rating Tab -->
-				<div class="container p-4 bg-light" ng-show="tab=='rating'">
-					<h2><strong>Reveiw & Rating</strong></h2>
+				<div class="review-rate container" ng-show="tab=='rating'">
+					<h2 class="mb-5"><strong>Reveiw & Rating</strong></h2>
 					<div class="review-box row d-flex align-items-center mb-4 p-3">
 						<div class="col-md-4">
 							<img src="../assets/images/s1.jpg" alt="trippic" width="200px" height="120px" />
@@ -448,8 +462,8 @@
 				</div>
 
 				<!-- Notification Setting Tab -->
-				<div class="container p-4 bg-light" ng-show="tab=='noti'">
-					<h2><strong>Notification Setting</strong></h2>
+				<div class="noti-setting container" ng-show="tab=='noti'">
+					<h2 class="mb-5"><strong>Notification Setting</strong></h2>
 					<div class="row mb-4">
 						<div class="col-md-12">
 							<h3>Updates and Promotion</h3>
