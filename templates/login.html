@@ -20,7 +20,7 @@
             <div class="col-md-4 p-3 shadow" ng-controller="loginCtrl">
                 <h2>Login</h2>
                 <hr/>
-                <form name="loginForm" ng-submit="login()">
+                <form name="loginForm" ng-submit="submitForm()">
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <div class="input-group">
@@ -54,10 +54,12 @@
                         </div>
                     </div>
                     <div class="form-row justify-content-center mt-3">
+                        <div class="form-group col-md-12 text-center">
+                            <span ng-show="error" class="error">{{error}}</span>
+                        </div>
                         <div class="form-group col-md-6">
                             <button type="submit" class="btn btn-primary btn-block login-btn">Login</button>
                         </div>
-                        <span ng-show="error" class="error">{{error}}</span>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12 text-center">
@@ -70,7 +72,7 @@
     </div>
 
     <!-- Forgot password Modal -->
-    <div class="modal" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalLabel" aria-hidden="true">
+    <div class="modal" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalLabel" aria-hidden="true" ng-controller="ForgotPasswordCtrl">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -80,18 +82,22 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form name="forgotPasswordForm" ng-submit="forgotPassword()">
-                        <div class="form-group">
-                            <label for="inputEmail">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Registered email">
+                    <form name="forgotPasswordForm" ng-submit="submitForm()">
+						<div class="form-group">
+							<!-- <label for="remail">Registered Email</label> -->
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                </div>
+                                <input type="email" class="form-control" id="rmail" name="remail" placeholder="Registered email" ng-model="remail" required>
+                            </div>
                             <!-- error message -->
-                            <span ng-show="forgotPasswordForm.email.$error.required">Email is required.</span>
-                            <span ng-show="forgotPasswordForm.email.$error.email">Invalid email address.</span>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer text-center">
-                    <button type="submit" class="btn btn-primary mx-auto" data-toggle="modal" data-miss="modal">Send Email</button>
+							<span ng-show="forgotPasswordForm.remail.$error.required" class="error">Input is required.</span>
+							<span ng-show="error" class="error">{{error}}</span>
+						</div>
+						<br><br>
+						<button type="submit" class="btn btn-primary">Receive Link</button>
+					</form>
                 </div>
             </div>
         </div>
